@@ -1,0 +1,25 @@
+﻿@model List<MOD_ADVEntity>
+@{
+    var listItem = Model;
+}
+<section id="dok-slider-banner" class="mb-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="dok-adv-slider swiper">
+                <div class="swiper-wrapper">
+                    @for (int i = 0; Model.IsNotEmpty() && i < Model.Count; i++)
+                    {
+                        <div class="swiper-slide slide-item">
+                            <a href="@(!string.IsNullOrEmpty(listItem[i].URL) ? listItem[i].URL : "javascript:;")" title="@listItem[i].Name" target="@listItem[i].Target" rel="nofollow" class="plain box p-0">
+                                <img class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(Model[i].File)" alt="@listItem[i].Name">
+                            </a>
+                        </div>
+                    }
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>

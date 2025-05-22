@@ -1,0 +1,25 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var listItem = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    if (page == null || listItem.IsEmpty()) return;
+    string Title = ViewData["Title"] as string;
+}
+
+<div class="container">
+    <div class="dok-news-block">
+        <div class="dok-heading">
+            <h1 class="mb-0">@Html.CurrentPage().Name</h1>
+        </div>
+        <div class="nav-newscate overflow-hidden">
+            <div class="swiper-wrapper">
+                @for (int i = 0; listItem != null && i < listItem.Count; i++)
+                {
+                    <div class="swiper-slide nav-newscate-item @(listItem[i].ID == Html.CurrentPage().ID ? " active" : "")">
+                        <a href="@Html.GetUrl(listItem[i].Code)" title="@listItem[i].Name"><span>@listItem[i].Name</span></a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

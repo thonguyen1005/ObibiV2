@@ -1,0 +1,77 @@
+﻿@model List<SYS_PAGEEntity>
+
+@{
+    var lstMenu = Model.Where(o => o.BrandID == 0).ToList();
+    var lstBrand = Model.Where(o => o.BrandID > 0).ToList();
+}
+<div class="menu-tree-child">
+    <div class="menu-tree-child-wrapper columns box">
+        <div class="row box-container">
+            @if (lstMenu.IsNotEmpty())
+            {
+
+            }
+            <!-- Cột trái: Menu con theo nhóm -->
+            <div class="col-md-@(lstBrand.IsNotEmpty() ? 9 : 12) left-menu">
+                <div class="menu-group">
+                    <h3>Điện thoại nổi bật @i</h3>
+                    <div class="menu-list">
+                        <div class="menu-item">
+                            <img src="https://via.placeholder.com/100" alt="Menu 1">
+                            <p>iPhone 15</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://via.placeholder.com/100" alt="Menu 2">
+                            <p>Samsung S24</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://via.placeholder.com/100" alt="Menu 3">
+                            <p>Xiaomi 14</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-group">
+                    <h3>Phụ kiện được ưa chuộng</h3>
+                    <div class="menu-list">
+                        <div class="menu-item">
+                            <img src="https://via.placeholder.com/100" alt="Phụ kiện 1">
+                            <p>Sạc nhanh</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://via.placeholder.com/100" alt="Phụ kiện 2">
+                            <p>Tai nghe Bluetooth</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://via.placeholder.com/100" alt="Phụ kiện 3">
+                            <p>Ốp lưng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thêm nhiều nhóm khác nếu muốn -->
+            </div>
+
+            <!-- Cột phải: Hãng sản xuất -->
+            <div class="col-md-3 right-menu">
+                <div class="brand-item">
+                    <img src="https://via.placeholder.com/80" alt="Apple">
+                    <p>Apple</p>
+                </div>
+                <div class="brand-item">
+                    <img src="https://via.placeholder.com/80" alt="Samsung">
+                    <p>Samsung</p>
+                </div>
+                <div class="brand-item">
+                    <img src="https://via.placeholder.com/80" alt="Xiaomi">
+                    <p>Xiaomi</p>
+                </div>
+                <div class="brand-item">
+                    <img src="https://via.placeholder.com/80" alt="Oppo">
+                    <p>Oppo</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

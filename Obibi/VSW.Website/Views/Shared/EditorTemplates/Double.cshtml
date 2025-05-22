@@ -1,0 +1,42 @@
+@model Double
+@{
+    var htmlAttributes = (Dictionary<string, object>)ViewData["htmlAttributes"];
+    object @class;
+    if (htmlAttributes.TryGetValue("class", out @class))
+    {
+        htmlAttributes["class"] = "form-control input-float " + @class;
+    }
+    else
+    {
+        htmlAttributes.Add("class", "form-control input-float");
+    }
+}
+@Html.TextBox("", Model, ViewData["htmlAttributes"])
+@*<input asp-for="@Model" type="text" class="form-control input-float" />*@
+@{
+    var postfix = "";
+    if (ViewData.ContainsKey("postfix") && ViewData["postfix"] != null)
+    {
+        postfix = ViewData["postfix"].ToString();
+    }
+}
+
+@if (Context.IsAjaxRequest())
+{
+    <script>
+    $(document).ready(function () {
+        if ($("#@Html.IdForModel()").length > 0) {
+            var v_negative = $("#@Html.IdForModel()").data('negative');
+            var decimal = parseFloat($("#@Html.IdForModel()").data('decimal'));
+            if (isNaN(decimal)) decimal = 0;
+            new Cleave("#@Html.IdForModel()", {
+                numeral: true,
+                numeralThousandsGroupStyle: 'thousand',
+                numeralPositiveOnly: !v_negative ? true : false,
+                numeralDecimalScale: (decimal > 0 ? decimal : 15),
+            });
+        }
+
+    });
+    </script>
+}

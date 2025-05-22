@@ -1,0 +1,16 @@
+﻿@model DateTime
+@*@{
+    var htmlAttributes = (Dictionary<string, object>)ViewData["htmlAttributes"];
+    object @class;
+    if (htmlAttributes.TryGetValue("class", out @class))
+    {
+        htmlAttributes["class"] = "form-control mr-2 input-time " + @class;
+    }
+    else
+    {
+        htmlAttributes.Add("class", "form-control mr-2 input-time");
+    }
+}
+@Html.TextBox("", "HH:mm", ViewData["htmlAttributes"])*@
+
+<input asp-for="@Model" value="@Utils.FormatDateTime(Model, DateTimeHelper.HHmm)" class="form-control mr-2 input-time" type="time" />

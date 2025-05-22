@@ -1,0 +1,111 @@
+﻿@model List<ModProductModel>
+@{
+    string Title = ViewData["Title"] as string;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    var listItem = Model;
+}
+
+<section class="dok-tabs mb-4">
+    <div class="container">
+        <div class="dok-heading d-flex flex-wrap align-items-center">
+            <h3>@(!string.IsNullOrEmpty(Title) ? Title : page?.Name ?? "")</h3>
+            <a href="@Html.GetUrl(page.Code)" class="d-lg-none d-block ms-auto text-dark" title="Tất cả">Tất cả</a>
+            @await Component.InvokeAsync("Menu", new { page = page,layout = "MenuProduct", state = 2})
+        </div>
+
+        <div class="dok-tabs">
+            <div>
+                <div class="dok-products-slider dok-slider-box swiper">
+                    <div class="swiper-wrapper">
+                        @for (int i = 0; listItem != null && i < listItem.Count; i++)
+                        {
+                            string url = Html.GetUrl(listItem[i].Code);
+
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="@url" title="@listItem[i].Name" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="@await ImageHelper.ResizeToWebpAsync(listItem[i].File)"
+                                                         width="358" height="358"
+                                                         alt="@listItem[i].Name"
+                                                         class="product__img">
+                                                </div>
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">@listItem[i].Name</h3>
+                                                </div>
+                                                @if (listItem[i].TotalBuy > 0)
+                                                {
+                                                    <div class="block-smem-price">@listItem[i].TotalBuy.ToFormattedString() sản phẩm đã bán</div>
+                                                }
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            @for (int z = 0; z < listItem[i].Star; z++)
+                                                            {
+                                                                <div class="ic-star is-active">
+                                                                    <i class="fas fa-star-sharp"></i>
+                                                                </div>
+                                                            }
+                                                            @for (int z = 0; z < 5 - listItem[i].Star; z++)
+                                                            {
+                                                                <div class="ic-star">
+                                                                    <i class="fas fa-star-sharp"></i>
+                                                                </div>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                    @if (listItem[i].CountComment > 0)
+                                                    {
+                                                        <div class="label-rate text-primary">
+                                                            (@listItem[i].CountComment <span>đánh giá </span>)
+                                                        </div>
+                                                    }
+                                                </div>
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            @if (listItem[i].PriceView > 0)
+                                                            {
+                                                                <text>@Utils.FormatMoney(listItem[i].PriceView)đ</text>
+                                                            }
+                                                            else
+                                                            {
+                                                                <vsw-rs key="Lienhe" />
+                                                            }
+                                                        </p>
+                                                        @if (listItem[i].PriceRoot > 0)
+                                                        {
+                                                            <p class="product__price--through">
+                                                                <text>@Utils.FormatMoney(listItem[i].PriceRoot)đ</text>
+                                                            </p>
+                                                            @if (listItem[i].SellOffPercent > 0)
+                                                            {
+                                                                <div class="product__price--percent">
+                                                                    <p class="product__price--percent-detail">
+                                                                        Giảm&nbsp;@(listItem[i].SellOffPercent)%
+                                                                    </p>
+                                                                </div>
+                                                            }
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <a class="block-add-to-cart addToCartAjax" data-id="@listItem[i].ID" data-hasproperty="@listItem[i].HasProperty.ToString().ToLower()" href="javascript:void(0)">Thêm giỏ hàng</a>
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

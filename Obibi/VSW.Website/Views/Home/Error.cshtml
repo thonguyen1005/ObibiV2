@@ -1,0 +1,25 @@
+﻿@{
+    int statusCode = ViewBag.statusCode;
+    string statusMessage = ViewBag.statusMessage;
+    ViewData["Title"] = statusMessage;
+}
+
+<div class="error-container">
+    <h1>@statusCode</h1>
+    <h2>@statusMessage</h2>
+    <p>
+        Chúng tôi rất xin lỗi vì sự bất tiện.
+        <br />
+        (Nếu tình trạng này vẫn diễn ra xin vui lòng liên hệ với quản trị viên.)
+    </p>
+    <div>
+        <a href="/" class="error-btn">Quay lại trang chủ</a>
+        <a class="error-btn" href="javascript:window.history.go(-1)">Quay lại trang vừa xem</a>
+    </div>
+    <hr />
+    <div class="footer">
+        <p>
+            Powered by @(Context.Request.Host)
+        </p>
+    </div>
+</div>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="content-language" content="vi" />
+    <title>@Html.Raw(ViewData["Title"])</title>
+    <meta name="keywords" content="@Html.Raw(ViewData["Keyword"])" />
+    <meta name="description" content="@Html.Raw(ViewData["Description"])" />
+    <link rel="canonical" href="@Html.Raw(ViewData["Canonical"])" />
+    <meta property="og:title" content="@Html.Raw(ViewData["Title"])" />
+    <meta property="og:site_name" content="@(Context.Request.Host)" />
+    <meta property="og:url" content="@(Context.Request.Scheme+"://"+ Context.Request.Host)" />
+    <meta property="og:image" content="@Html.Raw(ViewData["Image"])" />
+    <meta property="og:image:url" content="@Html.Raw(ViewData["Image_Url"])" />
+    <meta property="og:description" content="@Html.Raw(ViewData[" Description"])" />
+    <meta property="og:type" content="product" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta content="INDEX,FOLLOW" name="robots" />
+    <meta name="copyright" content="@(Context.Request.Host)" />
+    <meta name="author" content="@(Context.Request.Host)" />
+    <meta name="GENERATOR" content="@(Context.Request.Host)" />
+    <meta http-equiv="audience" content="General" />
+    <meta name="resource-type" content="Document" />
+    <meta name="distribution" content="Global" />
+    <meta name="revisit-after" content="1 days" />
+
+    <link href="~/Content/images/favicon.ico?v=1.0" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="~/Content/skins/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/skins/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/Content/skins/css/hc-offcanvas-nav.carbon.css">
+    <link rel="stylesheet" href="~/Content/skins/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="~/Content/skins/css/fancybox.css">
+    <link rel="stylesheet" href="~/Content/utils/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="~/Content/utils/select2/css/select2.readonly.css" />
+    <link rel="stylesheet" href="~/Content/skins/css/base.css">
+    <link rel="stylesheet" href="~/Content/skins/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="~/Content/skins/css/review.css">
+    <link rel="stylesheet" href="~/Content/skins/css/style.css">
+    <link rel="stylesheet" href="~/Content/skins/css/responsive.css">
+    <link rel="stylesheet" href="~/Content/skins/css/style_add.css?v=2.4">
+    <link rel="stylesheet" href="~/Content/utils/sweetalert/sweetalert.min.css?v-1.0" />
+    <base href="~/" />
+    @RenderSection("Header", false)
+</head>
+<body id="body" class="cart-page">
+    <div id="master-container">
+        <div id="loading" class="overlayld">
+            <div class="loading">
+                <div class="loader">
+                    <svg class="circular" viewBox="25 25 50 50">
+                        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                    </svg>
+                </div>
+                <div class="loading-text color">
+                    Vui lòng đợi trong giây lát
+                    <span>.</span><span>.</span><span>.</span>
+                </div>
+            </div>
+        </div>
+        <div id="header" class="header">
+            <div id="dok-header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="d-flex align-items-center justify-content-between gap-3 position-relative">
+                            <vsw-adv id="vswAdvLogo" />
+                            <vsw-menu-multi id="CMenuCategory" />
+                            <vsw-static id="CStaticSearch" />
+                        </div>
+                    </div>
+                    <vsw-static id="CStaticSearchMb" default-layout="SearchMb" />
+                </div>
+            </div>
+            <div class="dok-header-overlay"></div>
+        </div>
+        <vsw-static id="CStaticHeaderSimple" default-layout="HeaderSimple" />
+        <div id="content" class="content">
+            <vsw-antiforgery-token />
+            <vsw-static id="Breadcrumb" />
+            @RenderBody()
+        </div>
+        <footer id="footer" class="footer">
+            <vsw-static id="FooterService" default-layout="FooterService" />
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <vsw-menu id="Footer1" />
+                        <vsw-menu id="Footer2" />
+                        <vsw-menu id="Footer3" />
+                        <vsw-static id="Footer4" />
+                    </div>
+                </div>
+            </div>
+            <vsw-static id="CopyRight" />
+        </footer>
+        <vsw-static id="ModalBox" default-layout="ModalBox" />
+        <div id="go-top" title="Lên đầu trang"></div>
+    </div>
+    @*other*@
+    <script src="~/Content/skins/js/jquery-3.6.3.min.js"></script>
+    <script src="~/Content/skins/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/skins/js/hc-offcanvas-nav.js"></script>
+    <script src="~/Content/skins/js/perfect-scrollbar.min.js"></script>
+    <script src="~/Content/skins/js/sticky.min.js"></script>
+    <script src="~/Content/skins/js/swiper-bundle.min.js"></script>
+    <script src="~/Content/skins/js/swiper-element-bundle.min.js"></script>
+    <script src="~/Content/skins/js/fancybox.umd.js"></script>
+    <script src="~/Content/utils/select2/js/select2.min.js?v=1.1"></script>
+    <script src="~/Content/skins/js/toc.min.js"></script>
+    <script src="~/Content/skins/js/isotope.pkgd.min.js"></script>
+    <script src="~/Content/skins/js/app.js"></script>
+    <script src="~/Content/skins/js/script.js"></script>
+    <!-- main js -->
+    <script src="~/Content/skins/js/data.ajax.js"></script>
+    <script src="/Content/utils/sweetalert/sweetalert2.min.js"></script>
+    <script src="/Content/utils/sweetalert/sweetalert2.helper.js"></script>
+    <script src="~/Content/skins/js/library.js" asp-append-version="true"></script>
+
+    @await Html.PartialAsync("Notifications")
+    @RenderSection("Scripts", false)
+</body>
+</html>

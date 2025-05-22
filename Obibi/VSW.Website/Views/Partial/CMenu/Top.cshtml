@@ -1,0 +1,108 @@
+﻿@model List<SysPageModel>
+@{
+    if (Model.IsEmpty()) return;
+    var listItem = Model.Where(o => o.Level == 0).OrderBy(o => o.Order).ThenBy(o=> o.ID).ToList();
+}
+
+<div class="dok-category d-lg-block d-none">
+    <a class="dok-header-item" href="javascript:void(0)">
+        <i class="far fa-bars-staggered"></i>
+        <span>Danh mục</span>
+    </a>
+</div>
+
+<div id="menu-main" class="menu-container" style="display: none;">
+    <div class="menu-wrapper space-bread-crumb" style="top: 60px;">
+        <div class="menu-tree">
+            @for (int i = 0; listItem != null && i < listItem.Count; i++)
+            {
+                var lstMenu = Model.Where(o => o.ParentID == listItem[i].ID && o.BrandID < 1).OrderBy(o => o.Order).ThenBy(o => o.ID).ToList();
+                var lstBrand = Model.Where(o => o.ParentID == listItem[i].ID && o.BrandID > 0).OrderBy(o => o.Order).ThenBy(o => o.ID).ToList();
+                <div class="label-menu-tree" target="_self">
+                    <div class="label-menu-item">
+                        <div class="right-content">
+                            @if (!string.IsNullOrEmpty(listItem[i].Icon))
+                            {
+                                if (listItem[i].Icon.Contains("/"))
+                                {
+                                    <img width="25" height="25" class="lazyload" src="@await ImageHelper.ResizeToWebpAsync(listItem[i].Icon, 25, 25)" alt="@listItem[i].Name" />
+                                }
+                                else
+                                {
+                                    <i class="ic-cate @listItem[i].Icon"></i>
+                                }
+                            }
+
+                            <a href="@Html.GetUrl(listItem[i].Code)" title="@listItem[i].Name" class="multiple-link ml-2"><span>@listItem[i].Name</span></a>
+                        </div>
+                        @* <div class="menu-ic-right">
+                    <i class="fas fa-chevron-right"></i>
+                    </div> *@
+                    </div>
+                    @if (lstMenu.IsNotEmpty() || lstBrand.IsNotEmpty())
+                    {
+
+                        <div class="menu-tree-child">
+                            <div class="menu-tree-child-wrapper columns box">
+                                <div class="row box-container">
+                                    @if (lstMenu.IsNotEmpty())
+                                    {
+                                        var lstId = lstMenu.Select(o => o.ID).ToList();
+                                        var hasMenuSub3 = Model.Where(o => lstId.Contains(o.ParentID)).Any();
+                                        <!-- Cột trái: Menu con theo nhóm -->
+                                        <div class="col-md-@(lstBrand.IsNotEmpty() ? 9 : 12) left-menu">
+                                            @if (hasMenuSub3)
+                                            {
+                                                @for (int z = 0; z < lstMenu.Count; z++)
+                                                {
+                                                    var lstSubMenu = Model.Where(o => o.ParentID == lstMenu[z].ID && o.BrandID < 1).ToList();
+                                                    <div class="menu-group">
+                                                        <h3>@lstMenu[z].Name</h3>
+                                                        <div class="menu-list">
+                                                            @for (int k = 0; lstSubMenu.IsNotEmpty() && k < lstSubMenu.Count; k++)
+                                                            {
+                                                                <div class="menu-item">
+                                                                    <img src="@await ImageHelper.ResizeToWebpAsync(lstSubMenu[k].File, 100, 75)" alt="@lstSubMenu[k].Name">
+                                                                    <p>@lstSubMenu[k].Name</p>
+                                                                </div>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <div class="menu-list">
+                                                    @for (int z = 0; z < lstMenu.Count; z++)
+                                                    {
+                                                        <div class="menu-item">
+                                                            <img src="@await ImageHelper.ResizeToWebpAsync(lstMenu[z].File, 100, 75)" alt="@lstMenu[z].Name">
+                                                            <p>@lstMenu[z].Name</p>
+                                                        </div>
+                                                    }
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                    @if (lstBrand.IsNotEmpty())
+                                    {
+                                        <!-- Cột phải: Hãng sản xuất -->
+                                        <div class="col-md-3 right-menu">
+                                            @for (int z = 0; z < lstBrand.Count; z++)
+                                            {
+                                                <div class="brand-item">
+                                                    <img src="@await ImageHelper.ResizeToWebpAsync(lstBrand[z].File, 100, 75)" alt="@lstBrand[z].Name">
+                                                    <p>@lstBrand[z].Name</p>
+                                                </div>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,656 @@
+2025-05-10 07:30:02.301 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 07:30:03.670 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 07:30:04.147 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 07:30:04.283 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 07:30:04.284 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 07:31:50.285 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 07:31:51.104 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 07:31:51.351 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 07:31:51.434 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 07:31:51.435 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 07:31:54.963 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[<>f__AnonymousType5`17[System.Int32,System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,System.Int64,System.Int64,System.Int32,System.DateTime,System.Int32,System.Boolean,System.DateTime,System.Int64]]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[VSW.Website.DataBase.Entities.MOD_PRODUCTEntity]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method279(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at VSW.Website.DataBase.Services.ViewRenderService.PartialAsync(String viewPath, Object model, ViewDataDictionary viewData) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\DataBase\Services\ViewRenderService.cs:line 69
+   at VSW.Website.TagHelpers.Component.ProductTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\TagHelpers\Component\ProductTagHelper.cs:line 74
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared_DefaultMarster.<ExecuteAsync>b__68_1() in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Views\Shared\DefaultMarster.cshtml:line 0
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared_DefaultMarster.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 90
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 08:26:22.032 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 08:26:23.000 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 08:26:23.484 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 08:26:23.612 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 08:26:23.613 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 08:30:05.834 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 08:30:07.726 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 08:30:08.257 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 08:30:08.395 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 08:30:08.396 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 08:38:10.902 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 08:38:11.943 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 08:38:12.443 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 08:38:12.580 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 08:38:12.581 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 09:36:09.546 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 09:36:11.272 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 09:36:12.112 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 09:36:12.279 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 09:36:12.283 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 09:38:29.537 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 09:38:31.546 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 09:38:34.080 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 09:38:35.483 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 09:38:35.485 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 09:39:40.780 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 09:39:41.915 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 09:39:42.337 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 09:39:42.489 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 09:39:42.491 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 09:41:36.335 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 09:41:38.871 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 09:41:41.734 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 09:41:42.141 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 09:41:42.143 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 09:53:42.763 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 09:53:46.350 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 09:53:48.091 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 09:53:48.557 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 09:53:48.559 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 10:10:41.827 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 10:10:43.073 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 10:10:43.743 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 10:10:44.065 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 10:10:44.068 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 10:37:57.222 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 10:37:58.821 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 10:37:59.904 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 10:38:00.104 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 10:38:00.106 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 11:06:33.304 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 11:06:34.749 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 11:06:36.799 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 11:06:37.480 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 11:06:37.482 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 13:41:54.177 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 13:41:56.018 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 13:41:58.833 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 13:41:59.946 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 13:41:59.947 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 13:43:08.725 +07:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/MNews/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2025-05-10 13:43:08.760 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/MNews/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 90
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 13:49:29.162 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 13:49:30.821 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 13:49:31.663 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 13:49:31.887 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 13:49:31.889 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 13:51:44.913 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 13:51:46.443 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 13:51:46.991 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 13:51:47.133 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 13:51:47.134 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 13:58:00.184 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 13:58:01.546 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 13:58:02.698 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 13:58:03.172 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 13:58:03.182 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 13:58:37.545 +07:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/MNews/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2025-05-10 13:58:37.595 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/MNews/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 90
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 14:45:53.266 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 14:45:54.509 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 14:45:55.014 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 14:45:55.164 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 14:45:55.168 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 14:53:37.887 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 14:53:39.311 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 14:53:39.871 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 14:53:40.050 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 14:53:40.052 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 15:28:58.463 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 15:28:59.546 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 15:28:59.984 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 15:29:00.128 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 15:29:00.129 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 15:50:19.978 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 15:50:23.656 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 15:50:24.971 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 15:50:25.353 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 15:50:25.355 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 15:55:57.532 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 15:56:01.821 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 15:56:03.571 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 15:56:03.872 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 15:56:03.874 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 18:12:07.335 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 18:12:09.106 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 18:12:09.934 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 18:12:10.129 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 18:12:10.131 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 18:12:16.774 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at VSW.Website.Controllers.MNewsController.Index(NewsSearchModel searchModel) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Controllers\MNewsController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 90
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 18:14:06.212 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 18:14:08.759 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 18:14:09.981 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 18:14:10.368 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 18:14:10.370 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 18:15:34.946 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at AspNetCoreGeneratedDocument.Views_MNews_Index.ExecuteAsync() in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Views\MNews\Index.cshtml:line 13
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 90
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 18:22:34.868 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 18:22:36.368 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 18:22:36.934 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 18:22:37.256 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 18:22:37.259 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 18:25:23.168 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 18:25:25.363 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 18:25:26.056 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 18:25:26.355 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 18:25:26.359 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 18:25:46.248 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 229
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 90
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 18:26:45.881 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 18:26:50.636 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 18:26:52.528 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 18:26:52.931 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 18:26:52.937 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 19:46:45.424 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 19:46:47.204 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 19:46:48.068 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 19:46:48.299 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 19:46:48.302 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 19:48:18.102 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 229
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 19:53:00.037 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 19:53:01.265 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 19:53:01.772 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 19:53:01.915 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 19:53:01.917 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 19:53:15.709 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 19:55:20.819 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 19:55:25.649 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 19:55:26.943 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 19:55:27.264 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 19:55:27.266 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 19:58:44.464 +07:00 [ERR] The view 'Detail' was not found. Searched locations: ["/Views/MNews/Detail.cshtml","/Views/Shared/Detail.cshtml","/Pages/Shared/Detail.cshtml"]
+2025-05-10 19:58:44.521 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Detail' was not found. The following locations were searched:
+/Views/MNews/Detail.cshtml
+/Views/Shared/Detail.cshtml
+/Pages/Shared/Detail.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 22:29:08.345 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 22:29:09.365 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 22:29:09.795 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 22:29:09.982 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 22:29:09.983 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 22:33:24.980 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 22:33:26.680 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 22:33:27.377 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 22:33:27.579 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 22:33:27.580 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 22:34:09.216 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 22:34:41.096 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 22:35:03.512 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 22:37:31.659 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 22:37:36.419 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 22:37:38.517 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 22:37:39.097 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 22:37:39.105 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 22:40:49.820 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 22:40:51.348 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 22:40:52.003 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 22:40:52.136 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 22:40:52.137 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 22:42:23.116 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 22:42:29.084 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 22:48:42.857 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 22:48:44.153 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 22:48:44.964 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 22:48:45.135 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 22:48:45.136 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 23:18:10.030 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 23:18:12.107 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 23:18:15.712 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 23:18:17.139 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 23:18:17.142 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 23:20:26.664 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 23:20:30.091 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 23:21:20.119 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 23:21:22.784 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at VSW.Website.BaseController.OnActionExecuting(ActionExecutingContext context) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Base\BaseController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at VSW.Website.Middleware.DynamicRouteMiddleware.Invoke(HttpContext context, ISiteServiceInterface siteService, IPageServiceInterface pageService, ITemplateServiceInterface templateService) in C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\Middleware\DynamicRouteMiddleware.cs:line 91
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.StatusCodePagesExtensions.<>c__DisplayClass7_0.<<CreateHandler>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-05-10 23:31:45.190 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 23:31:48.157 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 23:31:49.452 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 23:31:49.782 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 23:31:49.784 +07:00 [DBG] [AppLoader] Started Application...
+2025-05-10 23:57:09.297 +07:00 [DBG] [AppLoader] Starting Application...
+2025-05-10 23:57:11.462 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-05-10 23:57:12.081 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-05-10 23:57:12.415 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-05-10 23:57:12.416 +07:00 [DBG] [AppLoader] Started Application...

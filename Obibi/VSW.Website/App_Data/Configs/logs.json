@@ -1,0 +1,38 @@
+﻿{
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "EasyNetQ": "Warning",
+        "RabbitMQ": "Warning",
+        "Microsoft": "Warning",
+        "System": "Warning",
+        "Elastic.Apm": "Warning",
+        "Quartz": "Warning",
+        "Microsoft.AspNetCore.Authentication": "Warning",
+        "IdentityServer4": "Warning"
+      }
+    },
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "path": "logs/vsw-.log",
+          "fileSizeLimitBytes": "1024000",
+          "rollingInterval": "Day",
+          "retainedFileCountLimit": "100",
+          "rollOnFileSizeLimit": "true",
+          "shared": "true",
+          "flushToDiskInterval": "00:00:01"
+        }
+      },
+      {
+        "Name": "Console",
+        "Args": {
+          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Code, Serilog.Sinks.Console",
+          "outputTemplate": "[{Timestamp:yyyy-MM-dd HH:mm:ss}] [{Level:u3}] {Message:lj} {NewLine}{Exception}"
+        }
+      }
+    ]
+  }
+}

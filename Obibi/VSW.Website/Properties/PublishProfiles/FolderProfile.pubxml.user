@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ADMIN\OneDrive\Desktop\Obibi\VSW.Website\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2025-05-11T15:26:18.2899225Z;True|2025-05-11T22:11:02.1019491+07:00;True|2025-05-11T22:04:27.6182564+07:00;True|2025-05-11T21:58:58.9773439+07:00;True|2025-05-11T21:08:59.2269028+07:00;True|2025-05-11T21:02:15.5119394+07:00;True|2025-05-11T20:59:51.4606018+07:00;True|2025-05-11T20:56:49.9350039+07:00;True|2025-05-11T11:13:35.6536782+07:00;True|2025-05-11T09:55:45.5509586+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

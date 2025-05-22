@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Caching\**" />
+    <Compile Remove="Excels\**" />
+    <Compile Remove="Storages\**" />
+    <EmbeddedResource Remove="Caching\**" />
+    <EmbeddedResource Remove="Excels\**" />
+    <EmbeddedResource Remove="Storages\**" />
+    <None Remove="Caching\**" />
+    <None Remove="Excels\**" />
+    <None Remove="Storages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\StorageService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elastic.Apm" Version="1.25.3" />
+    <PackageReference Include="linq2db.SqlServer" Version="5.4.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VSW.Core\VSW.Core.csproj" />
+  </ItemGroup>
+
+</Project>

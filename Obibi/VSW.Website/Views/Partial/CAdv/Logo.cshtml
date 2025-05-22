@@ -1,0 +1,10 @@
+﻿@model List<MOD_ADVEntity>
+
+<div class="dok-logo">
+    @for (int i = 0; Model.IsNotEmpty() && i < Model.Count; i++)
+    {
+        <a href="/" title="logo">
+            <img class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(Model[i].File, 50, 50)" alt="Logo">
+        </a>
+    }
+</div>

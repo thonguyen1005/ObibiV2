@@ -1,0 +1,25 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var listItem = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    if (page == null || listItem.IsEmpty()) return;
+    if (listItem.Count == 0) return;
+    string Title = ViewData["Title"] as string;
+}
+
+<div class="col-md-3">
+    <div class="ft-box">
+        <p class="ft-title"><@(!string.IsNullOrEmpty(Title) ? Title : page.Name)</p>
+        <ul class="ft-list-link">
+            <li>
+                <p>
+                    <vsw-rs key="HoTroKhachHang" />
+                </p>
+            </li>
+            @for (int i = 0; listItem != null && i < listItem.Count; i++)
+            {
+                <li><a href="@Html.GetUrl(listItem[i].Code)" title="@listItem[i].Name">@listItem[i].Name</a></li>
+            }
+        </ul>
+    </div>
+</div>

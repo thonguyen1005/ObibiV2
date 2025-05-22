@@ -1,0 +1,19 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var listChildPage = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+}
+
+@if (listChildPage.IsNotEmpty())
+{
+    <div class="list-related-tag">
+        <div class="nav">
+            @for (int i = 0; listChildPage != null && i < listChildPage.Count; i++)
+            {
+
+                <a href="@Html.GetUrl(listChildPage[i].Code)" title="@listChildPage[i].Name">@listChildPage[i].Name</a>
+            }
+            <a href="@Html.GetUrl(page.Code)" class="d-lg-block d-none" title="Tất cả">Tất cả</a>
+        </div>
+    </div>
+}

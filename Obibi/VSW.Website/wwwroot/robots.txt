@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /
+Disallow: /bin/
+Disallow: /logs/
+
+User-Agent: Googlebot
+Allow: .js
+Allow: .css
+
+Sitemap: https://obibi.vn/sitemap.xml

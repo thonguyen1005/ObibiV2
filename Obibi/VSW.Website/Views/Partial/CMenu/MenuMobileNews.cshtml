@@ -1,0 +1,24 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var lstNews = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    if (page == null || lstNews.IsEmpty()) return;
+    string Title = ViewData["Title"] as string;
+}
+
+
+<div class="dok-menu-mobile-filter-box">
+    <h3 class="dok-menu-mobile-title">Tin tức & liên hệ</h3>
+    <div id="dok-menu-mobile-category"
+         class="dok-menu-mobile-category dok-slider-box">
+        <div class="swiper-wrapper">
+            @for (int i = 0; lstNews != null && i < lstNews.Count; i++)
+            {
+                <div class="swiper-slide">
+                    <a href="@Html.GetUrl(lstNews[i].Code) %>">@lstNews[i].Name</a>
+                </div>
+            }
+        </div>
+        <div class="swiper-pagination position-static"></div>
+    </div>
+</div>

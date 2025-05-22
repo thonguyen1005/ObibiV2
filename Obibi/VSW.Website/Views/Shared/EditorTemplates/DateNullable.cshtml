@@ -1,0 +1,67 @@
+﻿@model DateTime?
+@{
+    var htmlAttributes = (Dictionary<string, object>)ViewData["htmlAttributes"];
+    object @class;
+    if (htmlAttributes.TryGetValue("class", out @class))
+    {
+        htmlAttributes["class"] = "form-control input-date datepicker " + @class;
+    }
+    else
+    {
+        htmlAttributes.Add("class", "form-control input-date datepicker");
+    }
+
+    object @type;
+    if (htmlAttributes.TryGetValue("type", out @type))
+    {
+        htmlAttributes["type"] = @type;
+    }
+    else
+    {
+        htmlAttributes.Add("type", "datetime");
+    }
+}
+@Html.TextBox("", Utils.FormatDate(Model.Value), ViewData["htmlAttributes"])
+@*<input asp-for="@Model" value="@Utils.FormatDate(Model.Value)" class="form-control input-date datepicker" type="text" />*@
+
+@if (Context.IsAjaxRequest())
+{
+    <script>
+        $(document).ready(function () {
+            if ($("#@Html.IdForModel()").length > 0) {
+                $('#@Html.IdForModel()').datepicker({
+                    firstDay: 1,
+                    showButtonPanel: true,
+                    changeMonth: true,
+                    changeYear: true,
+                    dateFormat: 'dd/mm/yy',
+                    onSelect: function (date, obj) {
+                        $(this).change();
+                    },
+                    beforeShow: function (input, obj) {
+                        if ($(input).attr('readonly')) {
+                            return false;
+                        }
+
+                        var picker = $(obj.dpDiv);
+                        var v_type = $(input).attr('type');
+                        var btn_today = picker.find('.ui-datepicker-current');
+
+                        if (v_type == 'date') {
+                            $(input).datepicker('option', 'dateFormat', 'yy-mm-dd');
+                        }
+
+                    },
+
+                });
+                new Cleave('#@Html.IdForModel()', {
+                    date: true,
+                    delimiter: '/',
+                    datePattern: ['d', 'm', 'Y'],
+                    copyDelimiter: true,
+                });
+            }
+    })
+
+    </script>
+}

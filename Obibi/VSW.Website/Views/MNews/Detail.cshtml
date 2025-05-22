@@ -1,0 +1,219 @@
+﻿@model ModNewsModel
+@{
+    var listItem = ViewBag.Other as List<ModNewsModel>;
+    var lstProduct = ViewBag.Products as List<MOD_PRODUCTEntity>;
+    var author = ViewBag.Author as MOD_AUTHOREntity;
+    var pageMenu = ViewBag.Menu as SYS_PAGEEntity;
+    var ArrTag = Model.Tags.Split(',');
+
+    string content = Utils.GetHtmlForSeo(Model.Content);
+    string htmlProduct = "";
+    if (lstProduct != null && lstProduct.Count > 0)
+    {
+        htmlProduct += @"<div class=""dok-products-post dok-slider-box swiper mb-3"">";
+        htmlProduct += @"<div class=""swiper-wrapper"">";
+        for (int i = 0; lstProduct != null && i < lstProduct.Count; i++)
+        {
+            string url = Html.GetUrl(lstProduct[i].Code);
+
+            htmlProduct += @"<div class=""swiper-slide"">";
+            htmlProduct += @"<div class=""product"">
+                        <div class=""product-info-container"">
+                            <div class=""product-info"">
+                                <a href=""" + url + @""" title=""" + lstProduct[i].Name + @""" class=""product__link button__link"">
+                                    <div class=""product__image"">
+                                        <img src=""" + ImageHelper.ResizeToWebp(lstProduct[i].File, 358, 358) + @"""
+                                            width=""358"" height=""358""
+                                            alt=""" + lstProduct[i].Name + @"""
+                                            class=""product__img"">
+                                    </div>
+                                    <div class=""product__name"">
+                                        <h3 class=""mb-0"">" + lstProduct[i].Name + @"</h3>
+                                    </div>";
+            htmlProduct += @"<div class=""bottom-div"">
+                                        <div class=""product__box-rating"">
+                                            <div>";
+            for (int z = 0; z < lstProduct[i].Star; z++)
+            {
+                htmlProduct += @"<div class=""ic-star is-active"">
+                                                    <i class=""fas fa-star-sharp""></i>
+                                                </div>";
+            }
+            for (int z = 0; z < 5 - lstProduct[i].Star; z++)
+            {
+                htmlProduct += @"<div class=""ic-star"">
+                                                    <i class=""fas fa-star-sharp""></i>
+                                                </div>";
+            }
+            htmlProduct += @"</div>
+                                        </div>";
+            htmlProduct += @"</div>
+                                    <div class=""block-box-price"">
+                                        <div class=""box-info__box-price"">
+                                            <p class=""product__price--show"">";
+            if (lstProduct[i].PriceView > 0)
+            {
+                htmlProduct += Utils.FormatMoney(lstProduct[i].PriceView) + "đ";
+            }
+            else
+            {
+                htmlProduct += "Liên hệ";
+            }
+            htmlProduct += "</p>";
+            if (lstProduct[i].PriceRoot > 0)
+            {
+                htmlProduct += @"<p class=""product__price--through"">
+                                                " + Utils.FormatMoney(lstProduct[i].PriceRoot) + @"đ
+                                            </p>";
+                if (lstProduct[i].SellOffPercent > 0)
+                {
+                    htmlProduct += @"<div class=""product__price--percent"">
+                                                <p class=""product__price--percent-detail"">
+                                                    Giảm&nbsp;" + lstProduct[i].SellOffPercent + @"%
+                                                </p>
+                                            </div>";
+                }
+            }
+            htmlProduct += @"</div>
+                                    </div>
+                                    </a>
+                                                                </div>
+                                                                <a class=""block-add-to-cart addToCartAjax"" data-id=""" + lstProduct[i].ID + @""" data-hasproperty=""" + lstProduct[i].HasProperty.ToString().ToLower() + @""" href=""javascript:void(0)"">Thêm giỏ hàng
+                                                                </a>
+                                    <div class=""install-0-tag"">
+                                        Trả góp 0%
+                                    </div>
+                                    </div>
+                                                        </div>";
+            htmlProduct += @"</div>";
+        }
+        htmlProduct += @"</div>";
+        htmlProduct += @"</div>";
+    }
+    if (content.Contains(@"listProductForNews"))
+    {
+        var doc = new HtmlAgilityPack.HtmlDocument();
+        doc.LoadHtml(content);
+        if (doc != null)
+        {
+            var listNode = doc.DocumentNode.SelectNodes(@"//div[contains(@class, 'listProductForNews')]");
+            for (int i = 0; listNode != null && i < listNode.Count; i++)
+            {
+                listNode[i].SetAttributeValue("class", "");
+                listNode[i].InnerHtml = htmlProduct;
+            }
+            content = doc.DocumentNode.InnerHtml;
+        }
+    }
+}
+
+<div class="article-detail">
+    <div class="dok-heading">
+        <h1 class="mb-0">@Model.Name </h1>
+    </div>
+    <div class="authorBox">
+        @if (Model.AuthorID > 0)
+        {
+            <span class="authorName">Biên tập bởi <b><a href="@Html.GetUrl("author/"+Model.AuthorCode)">@Model.AuthorName</a></b></span>
+        }
+        <span><i class="far fa-calendar-clock me-2"></i>@Utils.FormatDate(Model.Published)</span>
+        @if (Model.View > 0)
+        {
+            <span><i class="far fa-light fa-eye me-2"></i>@Utils.FormatMoney(Model.View) lượt xem</span>
+        }
+        @if (pageMenu != null)
+        {
+            <span>
+                <i class="far fa-tag me-2"></i>
+                <a href="@Html.GetUrl(pageMenu.Code)" class="text-link">@pageMenu.Name</a>
+            </span>
+        }
+    </div>
+    <hr>
+
+    <div class="article-content">
+        @Html.Raw(content)
+    </div>
+    @if (ArrTag != null && ArrTag.Length > 0 && !string.IsNullOrEmpty(Model.Tags.Trim()))
+    {
+        <div class="tags">
+            <strong class="fz-18">Từ khóa:</strong>
+            @for (int i = 0; ArrTag != null && i < ArrTag.Length; i++)
+            {
+                ArrTag[i] = ArrTag[i].Trim();
+                @if (i > 0)
+                {
+                    <text>, </text>
+                }
+                <a href="@Html.GetUrl("ntag/"+Data.GetCode(ArrTag[i]))" title="@ArrTag[i]">@ArrTag[i]</a>
+            }
+        </div>
+    }
+</div>
+<hr class="mobile-line" />
+
+@if (Model.AuthorID > 0 && author != null)
+{
+    <div class="dok-widget">
+        <div class="author-box flex-row align-items-center mt-0">
+            <div class="author-avatar me-3">
+                <img src="@await ImageHelper.ResizeToWebpAsync(author.File, 115,115)" alt="@author.Name" class="img-fluid w-100 h-100">
+            </div>
+            <div class="d-flex align-items-end w-100 mb-3 ms-4">
+                <div class="author-info">
+                    <p class="fz-18 fw-bold mb-1">@author.Name</p>
+                    <p class="fz-14 mb-0 text-secondary">
+                        @author.Position
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mobile-line" />
+}
+
+@if (listItem != null && listItem.Count > 0)
+{
+    <div class="dok-widget">
+        <h2 class="fw-bold fz-18 mb-3">Bài viết liên quan</h2>
+        <div class="dok-news mb-4">
+            <div class="d-flex flex-column">
+                @for (var i = 0; listItem != null && i < listItem.Count; i++)
+                {
+                    string url = Html.GetUrl(listItem[i].Code);
+
+                    <div class="item news-item-small">
+                        <div class="img">
+                            <a href="@url" title="@listItem[i].Name">
+                                <img class="img-fluid"
+                                     src="@await ImageHelper.ResizeToWebpAsync(listItem[i].File)"
+                                     alt="@listItem[i].Name">
+                            </a>
+                        </div>
+                        <div class="wrapper">
+                            <div class="name">
+                                <a href="@url" title="@listItem[i].Name">@listItem[i].Name</a>
+                            </div>
+                            <div class="meta">
+                                @if (listItem[i].AuthorID > 0)
+                                {
+                                    <a href="@Html.GetUrl("author/"+listItem[i].AuthorCode)">
+                                        <i class="fa fa-user me-2"></i>@(listItem[i].AuthorName)
+                                    </a>
+                                    <span class="mx-3">|</span>
+                                }
+                                <span>
+                                    <i class="fa fa-calendar-alt me-2"></i>@Utils.FormatDate(listItem[i].Published)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <a class="readmore-btn mb-0" href="@Html.GetUrlCurrentPage()">
+            <span>Xem thêm bài viết</span>
+        </a>
+    </div>
+    <hr class="mobile-line" />
+}

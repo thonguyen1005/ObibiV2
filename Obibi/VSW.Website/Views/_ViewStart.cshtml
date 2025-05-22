@@ -1,0 +1,12 @@
+﻿@{
+    string layout = ViewBag.Layout;
+    string ControllerName = base.ViewContext.RouteData.Values["controller"].ToString();
+    if (string.IsNullOrEmpty(layout))
+    {
+        Layout = "DefaultMarster";
+    }
+    else
+    {
+        Layout = (layout.EndsWith("layout") ? layout : layout + "Marster");
+    }
+}

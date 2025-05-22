@@ -1,0 +1,37 @@
+﻿@model MOD_ORDEREntity
+@{
+    var searchModel = ViewBag.Model as MCompleteModel;
+    var order = Model;
+}
+<div class="container">
+    <div class="cart-box">
+        <div class="alert-success-new"><i class="fad fa-bag-shopping"></i><strong>ĐẶT HÀNG THÀNH CÔNG</strong></div>
+        @if (order != null)
+        {
+            <div>
+                <h4 class="p-cart-title pd">Thông tin đơn hàng</h4>
+                <div class="p-cart-box">
+                    <table class="p-cart-table">
+                        <tr>
+                            <td class="text-black-50 fw-medium">Mã đơn hàng</td>
+                            <td class="ps-4">@order.Code</td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-black-50 fw-medium">Người nhận</td>
+                            <td class="ps-4">@order.Name, @order.Phone</td>
+                        </tr>
+                        <tr>
+                            <td class="text-black-50 fw-medium">Địa chỉ</td>
+                            <td class="ps-4">@order.Address</td>
+                        </tr>
+                        <tr>
+                            <td class="text-black-50 fw-medium">Tổng tiền</td>
+                            <td class="ps-4"><span class="price-color fw-bold">@Utils.FormatMoney(order.Total) đ</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,131 @@
+2025-04-20 11:24:55.378 +07:00 [DBG] [AppLoader] Starting Application...
+2025-04-20 11:24:55.835 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-04-20 11:24:57.139 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-04-20 11:24:57.265 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-04-20 11:24:57.935 +07:00 [FTL] Application startup exception
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at VSW.Core.Services.Excels.ExcelHelper.Init() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\Excels\ExcelHelper.cs:line 14
+   at VSW.Core.Services.ServiceModule.Initialize(IServiceProvider resolver) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\ServiceModule.cs:line 66
+   at VSW.Core.Services.StartUpBase.StartModules() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 71
+   at VSW.Core.Services.StartUpBase.OnConfigure(Boolean beginConfigure) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 59
+   at VSW.Core.Services.StartUpBase`2.Configure(TAppBuilder app) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 110
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.WebTools.BrowserLink.Net.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-04-20 11:24:58.030 +07:00 [ERR] Hosting failed to start
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at VSW.Core.Services.Excels.ExcelHelper.Init() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\Excels\ExcelHelper.cs:line 14
+   at VSW.Core.Services.ServiceModule.Initialize(IServiceProvider resolver) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\ServiceModule.cs:line 66
+   at VSW.Core.Services.StartUpBase.StartModules() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 71
+   at VSW.Core.Services.StartUpBase.OnConfigure(Boolean beginConfigure) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 59
+   at VSW.Core.Services.StartUpBase`2.Configure(TAppBuilder app) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 110
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.WebTools.BrowserLink.Net.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-20 11:25:05.625 +07:00 [DBG] [AppLoader] Starting Application...
+2025-04-20 11:25:05.952 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-04-20 11:25:06.262 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-04-20 11:25:06.338 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-04-20 11:25:06.343 +07:00 [FTL] Application startup exception
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at VSW.Core.Services.Excels.ExcelHelper.Init() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\Excels\ExcelHelper.cs:line 14
+   at VSW.Core.Services.ServiceModule.Initialize(IServiceProvider resolver) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\ServiceModule.cs:line 66
+   at VSW.Core.Services.StartUpBase.StartModules() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 71
+   at VSW.Core.Services.StartUpBase.OnConfigure(Boolean beginConfigure) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 59
+   at VSW.Core.Services.StartUpBase`2.Configure(TAppBuilder app) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 110
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.WebTools.BrowserLink.Net.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-04-20 11:25:06.377 +07:00 [ERR] Hosting failed to start
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at VSW.Core.Services.Excels.ExcelHelper.Init() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\Excels\ExcelHelper.cs:line 14
+   at VSW.Core.Services.ServiceModule.Initialize(IServiceProvider resolver) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\ServiceModule.cs:line 66
+   at VSW.Core.Services.StartUpBase.StartModules() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 71
+   at VSW.Core.Services.StartUpBase.OnConfigure(Boolean beginConfigure) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 59
+   at VSW.Core.Services.StartUpBase`2.Configure(TAppBuilder app) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 110
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.WebTools.BrowserLink.Net.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-20 11:25:48.096 +07:00 [DBG] [AppLoader] Starting Application...
+2025-04-20 11:25:48.471 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-04-20 11:25:48.854 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-04-20 11:25:48.962 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-04-20 11:25:48.970 +07:00 [FTL] Application startup exception
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at VSW.Core.Services.Excels.ExcelHelper.Init() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\Excels\ExcelHelper.cs:line 14
+   at VSW.Core.Services.ServiceModule.Initialize(IServiceProvider resolver) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\ServiceModule.cs:line 66
+   at VSW.Core.Services.StartUpBase.StartModules() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 71
+   at VSW.Core.Services.StartUpBase.OnConfigure(Boolean beginConfigure) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 59
+   at VSW.Core.Services.StartUpBase`2.Configure(TAppBuilder app) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 110
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.WebTools.BrowserLink.Net.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2025-04-20 11:25:49.017 +07:00 [ERR] Hosting failed to start
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at VSW.Core.Services.Excels.ExcelHelper.Init() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\Excels\ExcelHelper.cs:line 14
+   at VSW.Core.Services.ServiceModule.Initialize(IServiceProvider resolver) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\ServiceModule.cs:line 66
+   at VSW.Core.Services.StartUpBase.StartModules() in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 71
+   at VSW.Core.Services.StartUpBase.OnConfigure(Boolean beginConfigure) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 59
+   at VSW.Core.Services.StartUpBase`2.Configure(TAppBuilder app) in C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core.Services\StartupBase.cs:line 110
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.WebTools.BrowserLink.Net.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-20 11:28:17.686 +07:00 [DBG] [AppLoader] Starting Application...
+2025-04-20 11:28:18.216 +07:00 [DBG] [AppLoader] Configuring Services Application...
+2025-04-20 11:28:19.213 +07:00 [DBG] [AppLoader] Configuring Application...
+2025-04-20 11:28:19.944 +07:00 [DBG] [AppLoader] Starting Modules Application...
+2025-04-20 11:28:19.945 +07:00 [DBG] [AppLoader] Started Application...

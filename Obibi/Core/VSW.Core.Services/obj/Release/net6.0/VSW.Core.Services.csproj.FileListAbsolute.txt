@@ -1,0 +1,15 @@
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\bin\Release\net6.0\VSW.Core.Services.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\bin\Release\net6.0\VSW.Core.Services.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\bin\Release\net6.0\VSW.Core.Services.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\bin\Release\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\bin\Release\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\refint\VSW.Core.Services.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\VSW.Core.Services.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core.Services\obj\Release\net6.0\ref\VSW.Core.Services.dll

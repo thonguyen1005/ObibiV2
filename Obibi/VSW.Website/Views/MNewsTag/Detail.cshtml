@@ -1,0 +1,63 @@
+﻿@model List<ModNewsModel>
+@{
+    var listItem = Model;
+    var searchModel = ViewBag.Model as NewsSearchModel;
+    if (listItem.IsEmpty()) return;
+    string tag = ViewBag.Tag as string;
+}
+
+<div class="dok-news mb-lg-0 mb-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex flex-column sty-big boxNews">
+                @for (var i = 0; listItem != null && i < listItem.Count; i++)
+                {
+                    string url = Html.GetUrl(listItem[i].Code);
+                    string summary = listItem[i].Summary;
+                    if (string.IsNullOrEmpty(summary) && !string.IsNullOrEmpty(listItem[i].Content))
+                    {
+                        summary = Data.RemoveAllTag(listItem[i].Content).Substring(0, 15) + "...";
+                    }
+                    <div class="item news-item-small">
+                        <div class="img">
+                            <a href="@url" title="@listItem[i].Name">
+                                <img class="img-fluid"
+                                     src="@await ImageHelper.ResizeToWebpAsync(listItem[i].File)"
+                                     alt="@listItem[i].Name">
+                            </a>
+                        </div>
+                        <div class="wrapper">
+                            <div class="name">
+                                <a href="@url" title="@listItem[i].Name">@listItem[i].Name</a>
+                            </div>
+                            <div class="meta">
+                                @if (listItem[i].AuthorID > 0)
+                                {
+                                    <a href="@Html.GetUrl("author/"+listItem[i].AuthorCode)">
+                                        <i class="fa fa-user me-2"></i>@(listItem[i].AuthorName)
+                                    </a>
+                                    <span class="mx-3">|</span>
+                                }
+                                <span>
+                                    <i class="fa fa-calendar-alt me-2"></i>@Utils.FormatDate(listItem[i].Published)
+                                </span>
+                            </div>
+                            <div class="desc mt-2">
+                                @Html.Raw(summary)
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    @if (searchModel.TotalRecord > searchModel.PageSize)
+    {
+        <div class="page-sort-cate">
+            <nav class="pagination text-center">
+                @Html.Raw(Html.GetPagination(searchModel.Page, searchModel.PageSize, searchModel.TotalRecord, Html.GetUrl("ntag/"+tag)))
+            </nav>
+        </div>
+    }
+</div>
+

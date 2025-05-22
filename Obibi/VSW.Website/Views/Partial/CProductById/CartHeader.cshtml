@@ -1,0 +1,32 @@
+﻿@model List<ModProductModel>
+
+@for (int i = 0; Model != null && i < Model.Count; i++)
+{
+    string url = Html.GetUrl(Model[i].Code);
+
+    <li id="item-cart-@i">
+        <div class="dok-cart-img">
+            <a href="@url" title="@Model[i].Name">
+                <img class="img-fluid"
+                     src="@await ImageHelper.ResizeToWebpAsync(Model[i].File, 50, 50)"
+                     alt="@Model[i].Name">
+            </a>
+        </div>
+        <div class="dok-cart-info">
+            <p class="dok-cart-title mb-0">
+                @Model[i].Name
+            </p>
+            @if (Model[i].PriceView > 0)
+            {
+                <p class="dok-cart-price">@Utils.FormatMoney(Model[i].PriceView)đ</p>
+            }
+            else
+            {
+                <p class="dok-cart-price"><vsw-rs key="Lienhe" /></p>
+            }
+        </div>
+        <a class="dok-cart-trash" href="javascript:deleteCart(@Model[i].ID, @i)">
+            <i class="far fa-trash-alt"></i>
+        </a>
+    </li>
+}

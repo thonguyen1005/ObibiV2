@@ -1,0 +1,20 @@
+{
+  "Datasources": {
+    "Items": [
+      {
+        "name": "DBConnect",
+        "type": "MsSql",
+        "connections": {
+          "master": "db_core"
+        }
+      }
+    ],
+
+    "Connections": [
+      {
+        "name": "db_core",
+        "value": "Data Source=LAPTOP-EJ1OAQ2S\\THONV;Initial Catalog=obibi;User ID=sa;Password=1234567"
+      }
+    ]
+  }
+}

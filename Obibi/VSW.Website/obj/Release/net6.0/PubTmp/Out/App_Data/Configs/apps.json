@@ -1,0 +1,35 @@
+﻿{
+  "Apps": {
+    "Code": "VSW",
+    "MultiSite": false,
+    "Debug": false,
+    "StaticFileExtensions": [
+      ".js",
+      ".css",
+      ".ico",
+      ".png",
+      ".webp",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".svg",
+      ".woff",
+      ".woff2",
+      ".ttf",
+      ".ico",
+      ".eot",
+      ".map"
+    ]
+  },
+  "Assembly": {
+    "Patterns": [
+      "VSW.*.dll"
+    ],
+    "ExcludePatterns": [ "*.View.dll", "*.Views.dll" ],
+    "ResolvePaths": []
+  },
+
+  "Tracing": {
+    "Enabled": false
+  }
+}

@@ -1,0 +1,213 @@
+﻿@model MOD_ORDEREntity
+@{
+    var item = Model;
+    var DataContext = ViewBag.Model as MOrderModel;
+    var lstProduct = DataContext.lstProduct;
+    var cart = new Cart();
+}
+
+@if (cart.Items.Count < 1)
+{
+    @section Scripts {
+    <script type="text/javascript">
+        showSwalWarning("Giỏ hàng của bạn chưa có sản phẩm nào", "Thông báo", () => {
+            location.href = "/";
+        });
+    </script>
+    }
+}
+else
+{
+    <div class="container">
+        <div class="cart-breadcrumb d-flex align-items-center justify-content-between mb-2">
+            <a href="/">
+                <i class="fa fa-angle-left"></i>Mua thêm sản phẩm khác
+            </a>
+            <span>Giỏ hàng của bạn</span>
+        </div>
+        <form method="post" name="checkout_form" id="checkout_form" class="form-list">
+            <div class="cart-box">
+                <div class="cart-listing">
+                    <h4 class="p-cart-title pd">Danh sách sản phẩm</h4>
+                    <ul>
+                        @for (int i = 0; lstProduct.IsNotEmpty() && i < lstProduct.Count; i++)
+                        {
+                            string url = Html.GetUrl(lstProduct[i].Code);
+                            var listProductClassify = DataContext.lstClassify.Where(o => o.ProductID == lstProduct[i].ID).ToList();
+                            var listProductClassifyDetail = DataContext.lstClassifyDetail.Where(o => o.ProductID == lstProduct[i].ID).ToList();
+                            var listProductClassifyDetailPrice = DataContext.lstClassifyDetailPrice.Where(o => o.ProductID == lstProduct[i].ID).ToList();
+
+                            <li>
+                                <div class="p-cart-img">
+                                    <a href="@url" title="@lstProduct[i].Name">
+                                        <img src="@await ImageHelper.ResizeToWebpAsync(lstProduct[i].File)" alt="@lstProduct[i].Name"
+                                             class="img-fluid">
+                                    </a>
+                                    <div class="p-cart-remove">
+                                        <a href="javascript:;" onclick="delete_cart(@i)">
+                                            <i class="fa fa-times-circle mr-1"></i>Xoá
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-cart-info">
+                                    <div class="p-cart-top">
+                                        <h3>@lstProduct[i].Name</h3>
+                                        <div class="p-cart-price">
+                                            @if (lstProduct[i].PriceByCart > 0)
+                                            {
+                                                <span>@Utils.FormatMoney(lstProduct[i].PriceByCart) ₫</span>
+                                            }
+                                            else
+                                            {
+                                                <span>Liên hệ</span>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="p-cart-bottom">
+                                        @if (listProductClassify.IsNotEmpty())
+                                        {
+                                            <div class="p-cart-selection">
+                                                @for (int z = 0; z < listProductClassify.Count; z++)
+                                                {
+                                                    var lstItem = listProductClassifyDetail.Where(o => o.ClassifyID == listProductClassify[z].ID).ToList();
+                                                    string active = "";
+                                                    if (z == 0 && lstProduct[i].ColorByCart > 0)
+                                                    {
+                                                        var itemActive = lstItem.Where(o => o.ID == lstProduct[i].ColorByCart).FirstOrDefault();
+                                                        if (itemActive != null) active = itemActive.Name;
+                                                    }
+                                                    else if (lstProduct[i].SizeByCart > 0)
+                                                    {
+                                                        var itemActive = lstItem.Where(o => o.ID == lstProduct[i].SizeByCart).FirstOrDefault();
+                                                        if (itemActive != null) active = itemActive.Name;
+                                                    }
+
+                                                    <div class="dropdown">
+                                                        <a class="nav-link dropdown-toggle text-primary" href="javascript:;" id="Classify@(z)"
+                                                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            @(listProductClassify[z].Name + ": " + active)
+                                                        </a>
+                                                        <ul class="dropdown-menu" aria-labelledby="Classify@(z)">
+                                                            @for (int k = 0; lstItem != null && k < lstItem.Count; k++)
+                                                            {
+                                                                if (z == 0)
+                                                                {
+                                                                    <li><a class="dropdown-item" href="javascript:;" onclick="update_cart(@(i), @(lstProduct[i].QuantityByCart), @lstItem[k].ID, @(lstProduct[i].SizeByCart));">@lstItem[k].Name</a></li>
+                                                                }
+                                                                else
+                                                                {
+                                                                    <li><a class="dropdown-item" href="javascript:;" onclick="update_cart(@(i), @(lstProduct[i].QuantityByCart), @(lstProduct[i].ColorByCart), @lstItem[k].ID);">@lstItem[k].Name</a></li>
+                                                                }
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                }
+                                            </div>
+                                        }
+                                        <div class="d-flex align-items-center">
+                                            <div class="counter-container">
+                                                <button type="button" class="decrease">
+                                                    <i class="far fa-minus fz-14"></i>
+                                                </button>
+                                                <input type="number" value="@(lstProduct[i].QuantityByCart)" name="qtybutton" onchange="load_cart(this.value,@(i))" class="counter-input" readonly="">
+                                                <button type="button" class="increase">
+                                                    <i class="far fa-plus fz-14"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
+                <div class="p-cart-box">
+                    <div class="infor-customer">
+                        <div class="p-hinh-thuc mb-3">
+                            <h4 class="p-cart-title">Hình thức nhận hàng</h4>
+                            <div class="p-cart-delivery-menthod">
+                                <input type="radio" class="btn-check" name="Receive" id="giao-hang-tan-noi"
+                                       onchange="change_delivery_menthod('giao-hang');" autocomplete="off" @(item.Receive <= 1 ? "checked" : "") value="1">
+                                <label class="btn" for="giao-hang-tan-noi">Giao hàng tận nơi</label>
+                                <input type="radio" class="btn-check" name="Receive" id="nhan-tai-cua-hang"
+                                       onchange="change_delivery_menthod('nhan-hang');" autocomplete="off" @(item.Receive == 2 ? "checked" : "") value="2">
+                                <label class="btn" for="nhan-tai-cua-hang">Nhận tại cửa hàng</label>
+                            </div>
+                        </div>
+                        <div id="form-common-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" asp-for="Name" placeholder="Họ và tên">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" asp-for="Phone" placeholder="Số điện thoại">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="form-giao-hang">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <vsw-select class="form-control" asp-for="CityID" asp-items="@(DataContext.lstCity)" onchange="get_child(this.value, $('#DistrictID').val(), '.list-district','<option value=0>Chọn quận / huyện</option>');" />
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <select class="form-control list-district" name="DistrictID" id="DistrictID" onchange="get_child(this.value, $('#WardID').val(), '.list-ward', '<option value=0>Chọn phường / xã</option>');">
+                                            <option value="0">Chọn quận / huyện</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mb-3">
+                                        <select class="form-control list-ward" name="WardID" id="WardID">
+                                            <option value="0">Chọn phường / xã</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" autocomplete="off" asp-for="Address" placeholder="Số nhà, tòa nhà, tên thôn xóm, tên đường...">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" autocomplete="off" asp-for="Content" rows="5" placeholder="Ghi chú thêm nếu có">@item.Content</textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="form-nhan-hang" style="display: none;">
+                            <vsw-rs key="ThongTinCongTy" />
+                        </div>
+                    </div>
+                </div>
+                <div class="p-cart-box">
+                    <div class="total-provisional p-0">
+                        <ul>
+                            <li>
+                                <span class="total-product-quantity">
+                                    <span class="total-label fw-bold">Tổng thanh toán:</span>
+                                </span>
+                                <span class="temp-total-money fw-bold price-color" id="TotalMoney">@Utils.FormatMoney(DataContext.TotalPrice) ₫</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="p-cart-box">
+                    <div class="d-flex flex-column w-100 text-center">
+                        <a class="btn-cta order-button mb-3 d-flex align-items-center justify-content-center" href="javascript:void(0)" onclick="document.checkout_form.submit()">
+                            <strong class="text-uppercase text-dark">Đặt hàng</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+}

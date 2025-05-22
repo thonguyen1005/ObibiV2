@@ -1,0 +1,51 @@
+﻿@model Int32
+@{
+    var htmlAttributes = (Dictionary<string, object>)ViewData["htmlAttributes"];
+    object @class;
+    if (htmlAttributes.TryGetValue("class", out @class))
+    {
+        htmlAttributes["class"] = "form-control input-number text-right " + @class;
+    }
+    else
+    {
+        htmlAttributes.Add("class", "form-control input-number text-right");
+    }
+
+    if (htmlAttributes.ContainsKey("value"))
+    {
+        htmlAttributes.Remove("value");
+    }
+
+    //var attributesString = htmlAttributes.Select(x => "{0}=\"{1}\"".Format(x.Key, x.Value)).Join(" ");
+
+    //ViewData.TemplateInfo.
+}
+
+<input asp-for="@Model" class="form-control input-number text-right" />
+
+@*<input asp-for="@Model" />
+    @{
+        var postfix = "";
+        if (ViewData.ContainsKey("postfix") && ViewData["postfix"] != null)
+        {
+            postfix = ViewData["postfix"].ToString();
+        }
+    }*@
+
+@if (Context.IsAjaxRequest())
+{
+    <script>
+    $(document).ready(function () {
+            var eInt = $("#@Html.IdForModel()");
+            if (eInt.length > 0) {
+                @foreach (var att in htmlAttributes)
+                {
+                    <text>
+                        eInt.attr('@att.Key', '@Html.Raw(att.Value)');
+                    </text>
+                }
+
+            }
+    });
+    </script>
+}

@@ -1,0 +1,36 @@
+﻿@model Int32
+@{
+    var htmlAttributes = (Dictionary<string, object>)ViewData["htmlAttributes"];
+    object @class;
+    if (htmlAttributes.TryGetValue("class", out @class))
+    {
+        htmlAttributes["class"] = "form-control input-year text-center" + @class;
+    }
+    else
+    {
+        htmlAttributes.Add("class", "form-control input-year text-center");
+    }
+}
+@Html.TextBox("", Model, ViewData["htmlAttributes"])
+@{
+    var postfix = "";
+    if (ViewData.ContainsKey("postfix") && ViewData["postfix"] != null)
+    {
+        postfix = ViewData["postfix"].ToString();
+    }
+}
+
+@if (Context.IsAjaxRequest())
+{
+    <script>
+    $(document).ready(function () {
+        if ($("#@Html.IdForModel()").length > 0) {
+            new Cleave("#@Html.IdForModel()", {
+                numeral: true,
+                numeralThousandsGroupStyle:'none',
+                numeralIntegerScale:4
+            });
+        }
+    });
+    </script>
+}

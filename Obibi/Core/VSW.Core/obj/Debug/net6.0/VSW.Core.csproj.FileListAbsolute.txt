@@ -1,0 +1,36 @@
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\refint\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\VSW.Website\Core\VSW.Core\obj\Debug\net6.0\ref\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\refint\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Quản Lý Kho\QuanLyKho\Core\VSW.Core\obj\Debug\net6.0\ref\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\bin\Debug\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\refint\VSW.Core.dll
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\VSW.Core.pdb
+C:\Users\ADMIN\OneDrive\Desktop\Obibi\Core\VSW.Core\obj\Debug\net6.0\ref\VSW.Core.dll

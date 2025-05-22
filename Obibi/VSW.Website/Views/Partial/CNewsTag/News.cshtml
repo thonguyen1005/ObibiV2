@@ -1,0 +1,15 @@
+﻿@model List<MOD_TAGEntity>
+@{
+    if (Model.IsEmpty()) return;
+}
+<div class="dok-widget dok-widget-hot-news">
+    <h4 class="fw-bold fz-18 mb-3">Chủ đề Hot</h4>
+    <ul class="hot-lst">
+        @for (int i = 0; Model != null && i < Model.Count; i++)
+        {
+            <li>
+                <a href="@Html.GetUrl("ntag/"+ Model[i].Code)" title="@Model[i].Name" target="_blank">@Model[i].Name</a>
+            </li>
+        }
+    </ul>
+</div>

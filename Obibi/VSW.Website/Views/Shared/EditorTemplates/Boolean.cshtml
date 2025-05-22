@@ -1,0 +1,6 @@
+﻿@model bool
+<div class="button-switch">
+    <input asp-for="@Model" type="checkbox" class="switch" />
+    <label for="@Html.IdForModel()" data-off="Không" data-on="Có"></label>
+</div>
+

@@ -1,0 +1,69 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var lstCategory = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    if (page == null || lstCategory.IsEmpty()) return;
+    string Title = ViewData["Title"] as string;
+}
+
+<div class="dok-menu-mobile-filter-box">
+    <h3 class="dok-menu-mobile-title ">Danh mục sản phẩm</h3>
+    <div class="dok-menu-mobile-category dok-slider-box">
+        <div class="swiper-wrapper">
+            @for (int i = 0; lstCategory != null && i < lstCategory.Count; i += 3)
+            {
+                <div class="swiper-slide">
+                    <a href="@Html.GetUrl(lstCategory[i].Code)" class="label-menu-item">
+                        @if (!string.IsNullOrEmpty(lstCategory[i].Icon))
+                        {
+                            if (lstCategory[i].Icon.Contains("/"))
+                            {
+                                <img width="25" height="25" class="lazyload" data-src="@await ImageHelper.ResizeToWebpAsync(lstCategory[i].Icon, 25, 25)" alt="@lstCategory[i].Name " />
+                            }
+                            else
+                            {
+                                <i class="ic-cate @lstCategory[i].Icon "></i>
+                            }
+                        }
+                        <span>@lstCategory[i].Name </span>
+                    </a>
+                    @if (lstCategory.Count > i + 1)
+                    {
+                        <a href="@Html.GetUrl(lstCategory[i+1].Code)" class="label-menu-item">
+                            @if (!string.IsNullOrEmpty(lstCategory[i + 1].Icon))
+                            {
+                                if (lstCategory[i + 1].Icon.Contains("/"))
+                                {
+                                    <img width="25" height="25" class="lazyload" data-src="@await ImageHelper.ResizeToWebpAsync(lstCategory[i+1].Icon, 25, 25)" alt="@lstCategory[i+1].Name " />
+                                }
+                                else
+                                {
+                                    <i class="ic-cate @lstCategory[i+1].Icon "></i>
+                                }
+                            }
+                            <span>@lstCategory[i+1].Name </span>
+                        </a>
+                    }
+                    @if (lstCategory.Count > i + 2)
+                    {
+                        <a href="@Html.GetUrl(lstCategory[i+2].Code)" class="label-menu-item">
+                            @if (!string.IsNullOrEmpty(lstCategory[i + 2].Icon))
+                            {
+                                if (lstCategory[i + 2].Icon.Contains("/"))
+                                {
+                                    <img width="25" height="25" class="lazyload" data-src="@await ImageHelper.ResizeToWebpAsync(lstCategory[i+2].Icon, 25, 25)" alt="@lstCategory[i+2].Name " />
+                                }
+                                else
+                                {
+                                    <i class="ic-cate @lstCategory[i+2].Icon "></i>
+                                }
+                            }
+                            <span>@lstCategory[i+2].Name </span>
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+        <div class="swiper-pagination position-static"></div>
+    </div>
+</div>

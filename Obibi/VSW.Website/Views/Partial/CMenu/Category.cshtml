@@ -1,0 +1,49 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var listItem = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    if (page == null || listItem.IsEmpty()) return;
+    string Title = ViewData["Title"] as string;
+}
+
+<section class="dok-categories mb-4">
+    <div class="container">
+        <div>
+            <div class="dok-heading">
+                <h2>@(!string.IsNullOrEmpty(Title) ? Title : page.Name)</h2>
+            </div>
+            <div class="dok-category-list swiper">
+                <div class="swiper-wrapper">
+                    @for (int i = 0; listItem != null && i < listItem.Count; i += 2)
+                    {
+                        <div class="swiper-slide">
+                            <div class="category-wrap-item">
+                                <a class="category-item" href="@Html.GetUrl(listItem[i].Code)" title="@listItem[i].Name">
+                                    <div class="cate-img">
+                                        <img class="img-fluid"
+                                             src="@await ImageHelper.ResizeToWebpAsync(listItem[i].File)"
+                                             alt="@listItem[i].Name">
+                                    </div>
+                                    <h4 class="cate-title">@listItem[i].Name</h4>
+                                </a>
+                                @if (listItem.Count > i + 1)
+                                {
+                                    <a class="category-item" href="@Html.GetUrl(listItem[i+1].Code)" title="@listItem[i+1].Name">
+                                        <div class="cate-img">
+                                            <img class="img-fluid"
+                                                 src="@await ImageHelper.ResizeToWebpAsync(listItem[i+1].File)"
+                                                 alt="@listItem[i+1].Name">
+                                        </div>
+                                        <h4 class="cate-title">@listItem[i+1].Name</h4>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="swiper-pagination position-static"></div>
+            </div>
+        </div>
+    </div>
+</section>
+

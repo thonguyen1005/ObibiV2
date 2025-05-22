@@ -1,0 +1,37 @@
+﻿@{
+    var cart = new Cart();
+    string searchUrl = Html.Url("MSearch");
+    string cartUrl = Html.Url("MViewCart");
+}
+
+<nav id="header-simple" class="header-simple">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </li>
+            <li class="dok-header-search d-lg-none d-block">
+                <form method="post" id="formSearchPopup" onsubmit="doSearch('@searchUrl', $('#keywordPopup')); return false;">
+                    <input type="search" name="keywordPopup" id="keywordPopup" placeholder="Bạn cần tìm gì hôm nay?" autocomplete="off">
+                    <button type="button" onclick="doSearch('@searchUrl', $('#keywordPopup')); return false;"><i class="far fa-magnifying-glass"></i></button>
+                </form>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=@(Context.Request.Scheme+"://"+ Context.Request.Host + Html.GetUrlCurrentPage())" target="_blank">
+                    <i class="fa fa-share"></i>
+                </a>
+            </li>
+            <li class="dok-cart droplist mx-0">
+                <a href="@cartUrl" class="d-flex align-items-center">
+                    <div class="position-relative">
+                        <span class="dok-icon mr-0 fal fa-cart-shopping">
+                            <span class="dok-count cart_count">@cart.Items.Count</span>
+                        </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

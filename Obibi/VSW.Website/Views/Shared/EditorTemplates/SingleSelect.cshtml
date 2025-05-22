@@ -1,0 +1,22 @@
+﻿@model object
+@{
+    var htmlAttributes = (Dictionary<string, object>)ViewData["htmlAttributes"];
+    object @onchange;
+    htmlAttributes.TryGetValue("@onchange", out @onchange);
+}
+
+@Html.DropDownListFor(model => model, (IEnumerable<SelectListItem>)ViewData["SelectList"], "", htmlAttributes)
+@*<select asp-for="@Model" asp-items="@((IEnumerable<SelectListItem>)ViewData["SelectList"])"></select>*@
+
+@if (Context.IsAjaxRequest())
+{
+    <script>
+    $(document).ready(function () {
+        $('#@Html.IdForModel()').select2({
+            language: 'vi',
+            minimumResultsForSearch: 5,
+        });
+        //thonv edit
+    });
+    </script>
+}

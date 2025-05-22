@@ -1,0 +1,40 @@
+﻿@model List<SYS_PAGEEntity>
+@{
+    var lstBrand = Model;
+    var page = ViewData["Page"] as SYS_PAGEEntity;
+    if (page == null || lstBrand.IsEmpty()) return;
+    if (lstBrand.Count == 0) return;
+    string Title = ViewData["Title"] as string;
+}
+
+@if (lstBrand.IsNotEmpty())
+{
+    <div class="dok-menu-mobile-filter-box">
+        <h3 class="dok-menu-mobile-title">Thương hiệu</h3>
+        <div class="dok-brands">
+            <div class="dok-brand-list swiper">
+                <div class="swiper-wrapper">
+                    @for (int i = 0; lstBrand != null && i < lstBrand.Count; i += 2)
+                    {
+                        <div class="swiper-slide">
+                            <div class="category-wrap-item">
+                                <a class="category-item" href="@Html.GetUrl(lstBrand[i].Code)" title="@lstBrand[i].Name">
+                                    <img src="@await ImageHelper.ResizeToWebpAsync(lstBrand[i].File)"
+                                         height="50" alt="@lstBrand[i].Name" loading="lazy" class="filter-brand__img">
+                                </a>
+                                @if (lstBrand.Count > i + 1)
+                                {
+                                    <a class="category-item" href="@Html.GetUrl(lstBrand[i+1].Code)" title="@lstBrand[i+1].Name">
+                                        <img src="@await ImageHelper.ResizeToWebpAsync(lstBrand[i+1].File)"
+                                             height="50" alt="@lstBrand[i+1].Name" loading="lazy" class="filter-brand__img">
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="swiper-pagination position-static"></div>
+            </div>
+        </div>
+    </div>
+}
