@@ -1,26 +1,25 @@
-## Ignore Visual Studio temporary files, build results, and
-## user-specific files.
+# Thư mục build
+**/bin/
+**/obj/
 
-# Build Folders (bin, obj, etc...)
-**/[Bb]in/
-**/[Oo]bj/
+# Thư mục Visual Studio
+.vs/
 
-# Rider / VS Code folders
-.idea/
-.vscode/
-
-# User-specific files
+# Visual Studio user-specific files
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 
-# Auto-generated files
-Generated\ Files/
+# VS Code và JetBrains Rider
+.vscode/
+.idea/
 
-# Backup & log files
-*.bak
+# File tạm thời và cache
 *.log
+*.tmp
+*.temp
+*.cache
 
 # NuGet
 *.nupkg
@@ -29,12 +28,11 @@ Generated\ Files/
 packages/
 *.nuspec
 
-# ASP.NET Scaffolding
+# Scaffolding
 ScaffoldingReadMe.txt
 
-# Others
+# Auto-generated database files
 *.dbmdl
+
+# PDB (debug symbols)
 *.pdb
-*.cache
-*.tmp
-*.temp
