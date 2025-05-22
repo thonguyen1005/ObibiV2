@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="VSW.Lib.MVC.CPViewTemplate" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="hung.nguyen.1412@gmail.com" />
+    <meta name="generator" content="webviet24h.com" />
+
+    <link rel="shortcut icon" href="/{CPPath}/Content/skins/images/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/{CPPath}/Content/assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/{CPPath}/Content/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/{CPPath}/Content/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/{CPPath}/Content/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link href="/{CPPath}/Content/skins/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/{CPPath}/Content/skins/css/style.css" />
+    <link rel="stylesheet" href="/{CPPath}/Content/assets/vendor/css/pages/page-auth.css" />
+
+    <script src="/{CPPath}/Content/skins/js/helpers.js"></script>
+
+    <script type="text/javascript">
+        function setFocus() {
+            document.getElementById("loginForm").UserName.select();
+            document.getElementById("loginForm").UserName.focus();
+        }
+    </script>
+</head>
+
+<body onload="javascript:setFocus()">
+    <form id="vswForm" runat="server">
+        <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>
+        <script src="/{CPPath}/Content/assets/vendor/libs/popper/popper.js"></script>
+        <script src="/{CPPath}/Content/assets/vendor/js/bootstrap.js"></script>
+        <script src="/{CPPath}/Content/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+        <!-- endbuild -->
+        <!-- Main JS -->
+        <script src="/{CPPath}/Content/assets/js/main.js"></script>
+        <script type="text/javascript" src="/{CPPath}/Content/skins/js/library.js"></script>
+    </form>
+</body>
+</html>

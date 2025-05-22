@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6CC573A-6077-4B36-82DB-249EB8F86C07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VSW.Lib</RootNamespace>
+    <AssemblyName>VSW.Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\VSW.Website\bin\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\VSW.Website\bin\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Magick.NET-Q16-AnyCPU">
+      <HintPath>..\VSW.Website\bin\Magick.NET-Q16-AnyCPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.6.18.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=6.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.6.18.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.6.18.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.18.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.18.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.6.18.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSW.Corev2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\VSW.Website\bin\VSW.Corev2.0.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CAdvController.cs" />
+    <Compile Include="Controllers\CMenuController.cs" />
+    <Compile Include="Controllers\CFAQController.cs" />
+    <Compile Include="Controllers\CNewsController.cs" />
+    <Compile Include="Controllers\CProductController.cs" />
+    <Compile Include="Controllers\CPropertyController.cs" />
+    <Compile Include="Controllers\CStaticController.cs" />
+    <Compile Include="Controllers\CTextController.cs" />
+    <Compile Include="Controllers\MAjaxController.cs" />
+    <Compile Include="Controllers\MAuthorController.cs" />
+    <Compile Include="Controllers\MCompleteController.cs" />
+    <Compile Include="Controllers\MContentController.cs" />
+    <Compile Include="Controllers\MFeedbackController.cs" />
+    <Compile Include="Controllers\MNewsController.cs" />
+    <Compile Include="Controllers\MNewsTagController.cs" />
+    <Compile Include="Controllers\MBrandController.cs" />
+    <Compile Include="Controllers\MProductController.cs" />
+    <Compile Include="Controllers\MSearchController.cs" />
+    <Compile Include="Controllers\MSitemapController.cs" />
+    <Compile Include="Controllers\MViewCartController.cs" />
+    <Compile Include="CPControllers\AccessDeniedController.cs" />
+    <Compile Include="CPControllers\AjaxController.cs" />
+    <Compile Include="CPControllers\FormGiftController.cs" />
+    <Compile Include="CPControllers\FormPropertyAddController.cs" />
+    <Compile Include="CPControllers\FormPropertyController.cs" />
+    <Compile Include="CPControllers\FormWebMenuController.cs" />
+    <Compile Include="CPControllers\FormProductFileController.cs" />
+    <Compile Include="CPControllers\FormProductGroupController.cs" />
+    <Compile Include="CPControllers\FormProductFAQController.cs" />
+    <Compile Include="CPControllers\FormProductOldController.cs" />
+    <Compile Include="CPControllers\FormVoteFilesController.cs" />
+    <Compile Include="CPControllers\FormProductVideoController.cs" />
+    <Compile Include="CPControllers\FormProductOtherController.cs" />
+    <Compile Include="CPControllers\FormVoteController.cs" />
+    <Compile Include="CPControllers\FormWebUserController.cs" />
+    <Compile Include="CPControllers\FormProductController.cs" />
+    <Compile Include="CPControllers\FormNewsController.cs" />
+    <Compile Include="CPControllers\FormTextController.cs" />
+    <Compile Include="CPControllers\HomeController.cs" />
+    <Compile Include="CPControllers\LoginController.cs" />
+    <Compile Include="CPControllers\ModAuthorController.cs" />
+    <Compile Include="CPControllers\ModPromotionController.cs" />
+    <Compile Include="CPControllers\ModSaleController.cs" />
+    <Compile Include="CPControllers\ModUrlSeoActivityController.cs" />
+    <Compile Include="CPControllers\ModCommentController.cs" />
+    <Compile Include="CPControllers\WebPropertyConfigController.cs" />
+    <Compile Include="CPControllers\ModProductStateController.cs" />
+    <Compile Include="CPControllers\ModAdvController.cs" />
+    <Compile Include="CPControllers\ModAutoLinksController.cs" />
+    <Compile Include="CPControllers\ModFAQController.cs" />
+    <Compile Include="CPControllers\ModFeedbackController.cs" />
+    <Compile Include="CPControllers\ModFileController.cs" />
+    <Compile Include="CPControllers\ModGiftController.cs" />
+    <Compile Include="CPControllers\ModNewsController.cs" />
+    <Compile Include="CPControllers\ModOrderController.cs" />
+    <Compile Include="CPControllers\ModProductController.cs" />
+    <Compile Include="CPControllers\ModPropertyController.cs" />
+    <Compile Include="CPControllers\ModTagController.cs" />
+    <Compile Include="CPControllers\ModVideoController.cs" />
+    <Compile Include="CPControllers\ModVoteController.cs" />
+    <Compile Include="CPControllers\ModWebUserController.cs" />
+    <Compile Include="CPControllers\ModWebUserMenuController.cs" />
+    <Compile Include="CPControllers\SysMenuController.cs" />
+    <Compile Include="CPControllers\SysPageController.cs" />
+    <Compile Include="CPControllers\SysPropertyController.cs" />
+    <Compile Include="CPControllers\SysRedirectionController.cs" />
+    <Compile Include="CPControllers\SysResourceController.cs" />
+    <Compile Include="CPControllers\SysRoleController.cs" />
+    <Compile Include="CPControllers\SysSiteController.cs" />
+    <Compile Include="CPControllers\SysTemplateController.cs" />
+    <Compile Include="CPControllers\SysUserController.cs" />
+    <Compile Include="CPControllers\SysUserLogController.cs" />
+    <Compile Include="CPControllers\UserChangeInfoController.cs" />
+    <Compile Include="CPControllers\UserChangePassController.cs" />
+    <Compile Include="Design\EditPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Design\EditTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global\Application.cs" />
+    <Compile Include="Global\BaoKimApi\BaoKimApi.cs" />
+    <Compile Include="Global\BaoKimApi\DataFormatHelper.cs" />
+    <Compile Include="Global\Compare.cs" />
+    <Compile Include="Global\Cart.cs" />
+    <Compile Include="Global\Cookies.cs" />
+    <Compile Include="Global\CPLogin.cs" />
+    <Compile Include="Global\CPResource.cs" />
+    <Compile Include="Global\Ctv.cs" />
+    <Compile Include="Global\Data.cs" />
+    <Compile Include="Global\Directory.cs" />
+    <Compile Include="Global\Error.cs" />
+    <Compile Include="Global\Excel.cs" />
+    <Compile Include="Global\File.cs" />
+    <Compile Include="Global\FileUpload.cs" />
+    <Compile Include="Global\Html.cs" />
+    <Compile Include="Global\Image.cs" />
+    <Compile Include="Global\IniResourceService.cs" />
+    <Compile Include="Global\IniSqlResourceService.cs" />
+    <Compile Include="Global\JavaScript.cs" />
+    <Compile Include="Global\Json.cs" />
+    <Compile Include="Global\ListItem\Item.cs" />
+    <Compile Include="Global\ListItem\List.cs" />
+    <Compile Include="Global\Mail.cs" />
+    <Compile Include="Global\Message.cs" />
+    <Compile Include="Global\ObjectCookies.cs" />
+    <Compile Include="Global\Pager.cs" />
+    <Compile Include="Global\Permissions.cs" />
+    <Compile Include="Global\Random.cs" />
+    <Compile Include="Global\ReadPrice.cs" />
+    <Compile Include="Global\Security.cs" />
+    <Compile Include="Global\Session.cs" />
+    <Compile Include="Global\Setting.cs" />
+    <Compile Include="Global\Static.cs" />
+    <Compile Include="Global\Template.cs" />
+    <Compile Include="Global\Utils.cs" />
+    <Compile Include="Global\WebP.cs" />
+    <Compile Include="Global\WebResource.cs" />
+    <Compile Include="Global\WebResourceStatic.cs" />
+    <Compile Include="Models\BaoKim\OrderSendRequest.cs" />
+    <Compile Include="Models\BaoKim\OrderSendResponse.cs" />
+    <Compile Include="Models\BaoKim\OrderSuccessResponse.cs" />
+    <Compile Include="Models\BaoKim\OrderWebhookResponse.cs" />
+    <Compile Include="Models\GetSumModel.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\MenuModel.cs" />
+    <Compile Include="Models\ModPromotionProductModel.cs" />
+    <Compile Include="Models\ModPromotionModel.cs" />
+    <Compile Include="Models\ModProductClassifyDetailPriceModel.cs" />
+    <Compile Include="Models\ModProductClassifyDetailModel.cs" />
+    <Compile Include="Models\ModProductClassifyModel.cs" />
+    <Compile Include="Models\ModAuthorModel.cs" />
+    <Compile Include="Models\ModNewsProductModel.cs" />
+    <Compile Include="Models\ModProductViewModel.cs" />
+    <Compile Include="Models\ModUrlSeoActivityModel.cs" />
+    <Compile Include="Models\ModVoteDetailEntity.cs" />
+    <Compile Include="Models\ModVoteLikeModel.cs" />
+    <Compile Include="Models\ProductAjaxModel.cs" />
+    <Compile Include="Models\CPAccessModel.cs" />
+    <Compile Include="Models\CPRoleModel.cs" />
+    <Compile Include="Models\CPUserLogModel.cs" />
+    <Compile Include="Models\CPUserModel.cs" />
+    <Compile Include="Models\CPUserRoleModel.cs" />
+    <Compile Include="Models\ModAddressModel.cs" />
+    <Compile Include="Models\ModVoteFileModel.cs" />
+    <Compile Include="Models\ModProductVoteModel.cs" />
+    <Compile Include="Models\ModProductStateModel.cs" />
+    <Compile Include="Models\ModTSKTModel.cs" />
+    <Compile Include="Models\ModAdvModel.cs" />
+    <Compile Include="Models\ModAutoLinksModel.cs" />
+    <Compile Include="Models\ModCleanURLModel.cs" />
+    <Compile Include="Models\ModFAQModel.cs" />
+    <Compile Include="Models\ModFeedbackModel.cs" />
+    <Compile Include="Models\ModGHNModel.cs" />
+    <Compile Include="Models\ModGiftModel.cs" />
+    <Compile Include="Models\ModProductFAQModel.cs" />
+    <Compile Include="Models\ModProductOldModel.cs" />
+    <Compile Include="Models\ModProductVideoModel.cs" />
+    <Compile Include="Models\ModNewsModel.cs" />
+    <Compile Include="Models\ModNewsTagModel.cs" />
+    <Compile Include="Models\ModOnlineModel.cs" />
+    <Compile Include="Models\ModOrderProcessModel.cs" />
+    <Compile Include="Models\ModOrderDetailModel.cs" />
+    <Compile Include="Models\ModOrderModel.cs" />
+    <Compile Include="Models\ModProductFileModel.cs" />
+    <Compile Include="Models\ModProductGiftModel.cs" />
+    <Compile Include="Models\ModProductModel.cs" />
+    <Compile Include="Models\ModProductOtherModel.cs" />
+    <Compile Include="Models\ModProductTagModel.cs" />
+    <Compile Include="Models\ModPropertyModel.cs" />
+    <Compile Include="Models\ModSaleDetailModel.cs" />
+    <Compile Include="Models\ModSaleModel.cs" />
+    <Compile Include="Models\ModSubscribeModel.cs" />
+    <Compile Include="Models\ModTagModel.cs" />
+    <Compile Include="Models\ModVideoModel.cs" />
+    <Compile Include="Models\ModVoteModel.cs" />
+    <Compile Include="Models\ModWebUserFileModel.cs" />
+    <Compile Include="Models\ModWebUserMenuModel.cs" />
+    <Compile Include="Models\ModWebUserModel.cs" />
+    <Compile Include="Models\SysLangModel.cs" />
+    <Compile Include="Models\SysModuleModel.cs" />
+    <Compile Include="Models\SysPageModel.cs" />
+    <Compile Include="Models\SysSiteModel.cs" />
+    <Compile Include="Models\SysTemplateModel.cs" />
+    <Compile Include="Models\WebMenuModel.cs" />
+    <Compile Include="Models\WebPropertyConfigModel.cs" />
+    <Compile Include="Models\WebPropertyModel.cs" />
+    <Compile Include="Models\WebRedirectionModel.cs" />
+    <Compile Include="Models\WebResourceModel.cs" />
+    <Compile Include="Models\WebSettingModel.cs" />
+    <Compile Include="MVC\Controller.cs" />
+    <Compile Include="MVC\CPController.cs" />
+    <Compile Include="MVC\CPModuleInfo.cs" />
+    <Compile Include="MVC\CPViewControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVC\CPViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVC\CPViewTemplate.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVC\ModuleInfo.cs" />
+    <Compile Include="MVC\ViewControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVC\ViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Application.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

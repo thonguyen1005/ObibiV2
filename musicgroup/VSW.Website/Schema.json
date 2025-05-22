@@ -1,0 +1,59 @@
+{
+  "@context": "http://schema.org",
+  "@type": "{RS:Schema_type}",
+  "url": "{RS:Schema_url}",
+  "mainEntityofPage": "{RS:Schema_mainEntityofPage}",
+  "image": [ "{RS:Schema_image}" ],
+  "paymentAccepted": [ "{RS:Schema_paymentAccepted}" ],
+  "slogan": "{RS:Schema_slogan}",
+  "faxNumber": "{RS:Schema_faxNumber}",
+  "address": "{RS:Schema_address}",
+  "email": "{RS:Schema_email}",
+  "telephone": "{RS:Schema_telephone}",
+  "hasMap": [ "{RS:Schema_hasMap}" ],
+  "sameAs": [ "{RS:Schema_sameAs}" ],
+  "Taxid": "{RS:Schema_Taxid}",
+  "description": "{RS:Schema_description}",
+  "name": "{RS:Schema_name}",
+  "legalName": "{RS:Schema_legalName}",
+  "logo": "{RS:Schema_logo}",
+  "openingHours": [ "{RS:Schema_openingHours}" ],
+  "latitude": "{RS:Schema_latitude}",
+  "longitude": "{RS:Schema_longitude}",
+  "employee": {
+    "@type": "Person",
+    "name": "",
+    "jobTitle": "",
+    "image": "",
+    "url": "",
+    "description": ""
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "",
+    "jobTitle": "",
+    "image": "",
+    "url": "",
+    "description": ""
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": ""
+  },
+  "priceRange": "{RS:Schema_priceRange}",
+  "currenciesAccepted": [ "{RS:Schema_currenciesAccepted}" ],
+  "hasOfferCatalog": [
+    {
+      "@type": "OfferCatalog",
+      "name": "",
+      "numberOfItems": "",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

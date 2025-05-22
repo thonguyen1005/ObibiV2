@@ -1,0 +1,237 @@
+Time : 15/08/2024 01:57:07
+IP : ::1
+URL : http://localhost:40010/default.aspx
+Message : The file '~/Views/CAdv/LogoDefault.ascx' not found
+Source : VSW.Corev2.0
+TargetSite : Void RenderHtml(System.Web.UI.Control, System.String, System.String, System.String, System.String, System.String)
+StackTrace :    at VSW.Core.MVC.ViewPage.RenderHtml(Control control, String controlCode, String vswID, String viewLayout, String action, String defaultProperty)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 15/08/2024 01:57:07
+IP : ::1
+URL : http://localhost:40010/default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.5-kzm-ov.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 17/08/2024 10:52:50
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : The file '~/Views/CAdv/LogoDefault.ascx' not found
+Source : VSW.Corev2.0
+TargetSite : Void RenderHtml(System.Web.UI.Control, System.String, System.String, System.String, System.String, System.String)
+StackTrace :    at VSW.Core.MVC.ViewPage.RenderHtml(Control control, String controlCode, String vswID, String viewLayout, String action, String defaultProperty)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 17/08/2024 10:52:50
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.yqokqne8.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 17/08/2024 12:42:53
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Unable to load DLL 'libwebp.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+
+
+Time : 17/08/2024 12:42:57
+IP : ::1
+URL : http://localhost:40010/default.aspx
+Unable to load DLL 'libwebp.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)
+
+
+Time : 25/08/2024 12:10:43
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : Anonymously Hosted DynamicMethods Assembly
+TargetSite : System.Object lambda_method(System.Runtime.CompilerServices.Closure)
+StackTrace :    at lambda_method(Closure )
+   at VSW.Core.Models.DBToLinQ`1.Lambda(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression`1 exp)
+   at VSW.Core.Models.DBQuery`1.Where(Expression`1 exp)
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 8
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 25/08/2024 12:10:43
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.nyb1fm-m.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 25/08/2024 12:13:50
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : Anonymously Hosted DynamicMethods Assembly
+TargetSite : System.Object lambda_method(System.Runtime.CompilerServices.Closure)
+StackTrace :    at lambda_method(Closure )
+   at VSW.Core.Models.DBToLinQ`1.Lambda(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression`1 exp)
+   at VSW.Core.Models.DBQuery`1.Where(Expression`1 exp)
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 8
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 25/08/2024 12:13:50
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.nyb1fm-m.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 25/08/2024 10:56:32
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : Void ActionAddProductMulti(VSW.Lib.CPControllers.ProductModel)
+StackTrace :    at VSW.Lib.CPControllers.AjaxController.ActionAddProductMulti(ProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\AjaxController.cs:line 3083
+
+
+Time : 25/08/2024 10:56:32
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.kpcoljwf.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+

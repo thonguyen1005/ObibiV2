@@ -1,0 +1,1753 @@
+Time : 02/09/2024 08:02:28
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.9464ee90.esdp3czi
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_modauthor_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModAuthor\Add.ascx:line 6
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 08:02:28
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.j31_b6qi.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 08:10:46
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.9464ee90.esdp3czi
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_modauthor_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModAuthor\Add.ascx:line 6
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 08:10:46
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.j31_b6qi.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 08:10:47
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.9464ee90.esdp3czi
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_modauthor_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModAuthor\Add.ascx:line 6
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 08:10:47
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.j31_b6qi.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 08:10:48
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.9464ee90.esdp3czi
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_modauthor_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModAuthor\Add.ascx:line 6
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 08:10:48
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.j31_b6qi.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 09:19:03
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?Type=Brand&Selected=19490
+Message : c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\FormWebMenu\Index.ascx(164): error CS1061: 'VSW.Lib.CPControllers.SysMenuModel' does not contain a definition for 'ItemControl' and no extension method 'ItemControl' accepting a first argument of type 'VSW.Lib.CPControllers.SysMenuModel' could be found (are you missing a using directive or an assembly reference?)
+Source : System.Web
+TargetSite : System.CodeDom.Compiler.CompilerResults Compile()
+StackTrace :    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at VSW.Core.MVC.ViewPageBase.thanhhung_4(String directory)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.xfa54krg.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 09:47:50
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?ItemControl=BrandID
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.c7cee981.fq8p8jli
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_formwebmenu_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\FormWebMenu\Add.ascx:line 127
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_form_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_form.master.de4118dd.jj29c3o1.0.cs:line 0
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 09:47:50
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?ItemControl=BrandID
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.c7cee981.fq8p8jli
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_formwebmenu_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\FormWebMenu\Add.ascx:line 127
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_form_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_form.master.de4118dd.jj29c3o1.0.cs:line 0
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 09:47:50
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?ItemControl=BrandID
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.nczlbrdh.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 09:47:50
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?ItemControl=BrandID
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.nczlbrdh.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 02/09/2024 09:48:59
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?ItemControl=BrandID
+Message : Object reference not set to an instance of an object.
+Source : App_Web_add.ascx.c7cee981.fq8p8jli
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.cp_views_formwebmenu_add_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\FormWebMenu\Add.ascx:line 127
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_form_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_form.master.de4118dd.jj29c3o1.0.cs:line 0
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 02/09/2024 09:48:59
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx?ItemControl=BrandID
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.nczlbrdh.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 09/09/2024 03:58:22
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Cannot open database "obibi" requested by the login. The login failed.
+Login failed for user 'akr_run'.
+SQLText : SELECT * FROM [Web_Redirection] a  with (NOLOCK) 
+SQLParameters : 
+Source : VSW.Corev2.0
+TargetSite : System.Data.DataSet ExecuteDataSet(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteDataSet(String connectionString, String command, Object[] Params)
+   at VSW.Core.Models.ServiceBase`1.ExecuteDataTable(String command, Object[] Params)
+   at VSW.Core.Models.DBQuery`1.ToList()
+   at VSW.Core.Models.DBQuery`1.ToList_Cache()
+   at VSW.Lib.Web.Application.Redirection() in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Web\Application.cs:line 21
+   at VSW.Lib.Web.Application.Application_BeginRequest(Object sender, EventArgs e) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Web\Application.cs:line 110
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 09/09/2024 03:58:23
+IP : ::1
+URL : http://localhost:40010/favicon.ico
+Message : Cannot open database "obibi" requested by the login. The login failed.
+Login failed for user 'akr_run'.
+SQLText : SELECT * FROM [Web_Redirection] a  with (NOLOCK) 
+SQLParameters : 
+Source : VSW.Corev2.0
+TargetSite : System.Data.DataSet ExecuteDataSet(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteDataSet(String connectionString, String command, Object[] Params)
+   at VSW.Core.Models.ServiceBase`1.ExecuteDataTable(String command, Object[] Params)
+   at VSW.Core.Models.DBQuery`1.ToList()
+   at VSW.Core.Models.DBQuery`1.ToList_Cache()
+   at VSW.Lib.Web.Application.Redirection() in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Web\Application.cs:line 21
+   at VSW.Lib.Web.Application.Application_BeginRequest(Object sender, EventArgs e) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Web\Application.cs:line 110
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 10/09/2024 03:11:57
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : App_Web_main.ascx.7d0d399b.squlb7mw
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.views_cproperty_main_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\CProperty\Main.ascx:line 187
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.views_mproduct_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\MProduct\Index.ascx:line 21
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at ASP.views_shared_product_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\Shared\Product.Master:line 7
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 10/09/2024 03:11:57
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.qtacmy6s.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 10/09/2024 11:01:57
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Ambiguous match found.
+Source : mscorlib
+TargetSite : System.Reflection.MethodInfo GetMethodImpl(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])
+StackTrace :    at System.RuntimeType.GetMethodImpl(String name, BindingFlags bindingAttr, Binder binder, CallingConventions callConv, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetMethod(String name)
+   at VSW.Core.MVC.ViewPageRender.RenderMethod(ViewPageBase viewPage, Controller controller, Class class, String methodName)
+   at VSW.Core.MVC.ViewPageRender.RenderPage(ViewPageBase viewPage, Controller controller, Class class, String methodName)
+   at VSW.Core.MVC.ViewPageBase.thanhhung_3(Class class, String action)
+   at VSW.Core.MVC.ViewPage.thanhhung_6()
+   at VSW.Core.MVC.ViewPage.InitializeCulture()
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize() in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.-bfroj7p.0.cs:line 0
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.-bfroj7p.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 10/09/2024 11:03:13
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Ambiguous match found.
+Source : mscorlib
+TargetSite : System.Reflection.MethodInfo GetMethodImpl(System.String, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])
+StackTrace :    at System.RuntimeType.GetMethodImpl(String name, BindingFlags bindingAttr, Binder binder, CallingConventions callConv, Type[] types, ParameterModifier[] modifiers)
+   at System.Type.GetMethod(String name)
+   at VSW.Core.MVC.ViewPageRender.RenderMethod(ViewPageBase viewPage, Controller controller, Class class, String methodName)
+   at VSW.Core.MVC.ViewPageRender.RenderPage(ViewPageBase viewPage, Controller controller, Class class, String methodName)
+   at VSW.Core.MVC.ViewPageBase.thanhhung_3(Class class, String action)
+   at VSW.Core.MVC.ViewPage.thanhhung_6()
+   at VSW.Core.MVC.ViewPage.InitializeCulture()
+   at ASP.default_aspx.__BuildControlTree(default_aspx __ctrl) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Default.aspx:line 1
+   at ASP.default_aspx.FrameworkInitialize() in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.5bd8xgtl.0.cs:line 0
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.5bd8xgtl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 13/09/2024 11:51:59
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : App_Web_main.ascx.7d0d399b.cafwz1lm
+TargetSite : Void __Render__control1(System.Web.UI.HtmlTextWriter, System.Web.UI.Control)
+StackTrace :    at ASP.views_cproperty_main_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\CProperty\Main.ascx:line 187
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.views_mproduct_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\MProduct\Index.ascx:line 21
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at ASP.views_shared_product_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\Shared\Product.Master:line 7
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 13/09/2024 11:51:59
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.k1rvgs0p.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 13/09/2024 11:54:27
+IP : ::1
+URL : http://localhost:40010/Default.aspx
+Message : c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\Views\CProperty\Main.ascx(507): error CS0103: The name 'z' does not exist in the current context
+Source : System.Web
+TargetSite : System.CodeDom.Compiler.CompilerResults Compile()
+StackTrace :    at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
+   at VSW.Core.MVC.ViewPage.RenderHtml(Control control, String controlCode, String vswID, String viewLayout, String action, String defaultProperty)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.thanhhung_14(Control control)
+   at VSW.Core.MVC.ViewPage.thanhhung_12(Control control, String custom)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.InitPage(Control control)
+   at VSW.Core.MVC.ViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.cdcab7d2.k1rvgs0p.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 12:57:36
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : System.String ShowDdlMenuByType(System.String, Int32, Int32)
+StackTrace :    at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 374
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 52
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 12:57:36
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 12:57:36
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 12:57:52
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : System.String ShowDdlMenuByType(System.String, Int32, Int32)
+StackTrace :    at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 374
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 52
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 12:57:52
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 12:57:57
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : System.String ShowDdlMenuByType(System.String, Int32, Int32)
+StackTrace :    at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 374
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 52
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 12:57:57
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 01:01:24
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Invalid column name 'PropertyParentID'.
+SQLText : INSERT INTO [Web_PropertyConfig]([MenuID], [PropertyID], [PropertyParentID], [BrandID], [IsShowMenu], [ShowFilterFast], [ShowBreadCrumb]) VALUES(@MenuID, @PropertyID, @PropertyParentID, @BrandID, @IsShowMenu, @ShowFilterFast, @ShowBreadCrumb); SELECT @@IDENTITY
+SQLParameters : @MenuID=18671, @PropertyID=0, @PropertyParentID=0, @BrandID=18243, @IsShowMenu=False, @ShowFilterFast=False, @ShowBreadCrumb=False, 
+Source : VSW.Corev2.0
+TargetSite : VSW.Core.Global.Object ExecuteScalar(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteScalar(String connectionString, String command, Object[] Params)
+   at VSW.Core.Data.SQL.Insert(String connectionString, String tableName, Boolean identity, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Insert(Boolean identity, Object[] Fields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, String[] propertyExec, String[] propertyNotExec, Dictionary`2 customField)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, Expression`1 propertyExec, Expression`1 propertyNotExec, Dictionary`2 customFields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item)
+   at VSW.Lib.CPControllers.WebPropertyConfigController.ValidSave(ModProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\WebPropertyConfigController.cs:line 140
+
+
+Time : 14/09/2024 01:01:25
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : Anonymously Hosted DynamicMethods Assembly
+TargetSite : System.Object lambda_method(System.Runtime.CompilerServices.Closure)
+StackTrace :    at lambda_method(Closure )
+   at VSW.Core.Models.DBToLinQ`1.Lambda(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression`1 exp)
+   at VSW.Core.Models.DBQuery`1.Where(Expression`1 exp)
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 8
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 01:01:25
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 01:03:18
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Invalid column name 'PropertyParentID'.
+SQLText : INSERT INTO [Web_PropertyConfig]([MenuID], [PropertyID], [PropertyParentID], [BrandID], [IsShowMenu], [ShowFilterFast], [ShowBreadCrumb]) VALUES(@MenuID, @PropertyID, @PropertyParentID, @BrandID, @IsShowMenu, @ShowFilterFast, @ShowBreadCrumb); SELECT @@IDENTITY
+SQLParameters : @MenuID=18671, @PropertyID=0, @PropertyParentID=0, @BrandID=18243, @IsShowMenu=False, @ShowFilterFast=False, @ShowBreadCrumb=False, 
+Source : VSW.Corev2.0
+TargetSite : VSW.Core.Global.Object ExecuteScalar(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteScalar(String connectionString, String command, Object[] Params)
+   at VSW.Core.Data.SQL.Insert(String connectionString, String tableName, Boolean identity, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Insert(Boolean identity, Object[] Fields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, String[] propertyExec, String[] propertyNotExec, Dictionary`2 customField)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, Expression`1 propertyExec, Expression`1 propertyNotExec, Dictionary`2 customFields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item)
+   at VSW.Lib.CPControllers.WebPropertyConfigController.ValidSave(ModProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\WebPropertyConfigController.cs:line 140
+
+
+Time : 14/09/2024 01:03:33
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : Anonymously Hosted DynamicMethods Assembly
+TargetSite : System.Object lambda_method(System.Runtime.CompilerServices.Closure)
+StackTrace :    at lambda_method(Closure )
+   at VSW.Core.Models.DBToLinQ`1.Lambda(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression`1 exp)
+   at VSW.Core.Models.DBQuery`1.Where(Expression`1 exp)
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 8
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 01:03:33
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 01:05:46
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Invalid column name 'PropertyParentID'.
+SQLText : INSERT INTO [Web_PropertyConfig]([MenuID], [PropertyID], [PropertyParentID], [BrandID], [IsShowMenu], [ShowFilterFast], [ShowBreadCrumb]) VALUES(@MenuID, @PropertyID, @PropertyParentID, @BrandID, @IsShowMenu, @ShowFilterFast, @ShowBreadCrumb); SELECT @@IDENTITY
+SQLParameters : @MenuID=18671, @PropertyID=0, @PropertyParentID=0, @BrandID=18243, @IsShowMenu=False, @ShowFilterFast=False, @ShowBreadCrumb=False, 
+Source : VSW.Corev2.0
+TargetSite : VSW.Core.Global.Object ExecuteScalar(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteScalar(String connectionString, String command, Object[] Params)
+   at VSW.Core.Data.SQL.Insert(String connectionString, String tableName, Boolean identity, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Insert(Boolean identity, Object[] Fields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, String[] propertyExec, String[] propertyNotExec, Dictionary`2 customField)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, Expression`1 propertyExec, Expression`1 propertyNotExec, Dictionary`2 customFields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item)
+   at VSW.Lib.CPControllers.WebPropertyConfigController.ValidSave(ModProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\WebPropertyConfigController.cs:line 140
+
+
+Time : 14/09/2024 01:05:49
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : Anonymously Hosted DynamicMethods Assembly
+TargetSite : System.Object lambda_method(System.Runtime.CompilerServices.Closure)
+StackTrace :    at lambda_method(Closure )
+   at VSW.Core.Models.DBToLinQ`1.Lambda(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression`1 exp)
+   at VSW.Core.Models.DBQuery`1.Where(Expression`1 exp)
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 8
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 01:05:49
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 01:06:13
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Invalid column name 'PropertyParentID'.
+SQLText : INSERT INTO [Web_PropertyConfig]([MenuID], [PropertyID], [PropertyParentID], [BrandID], [IsShowMenu], [ShowFilterFast], [ShowBreadCrumb]) VALUES(@MenuID, @PropertyID, @PropertyParentID, @BrandID, @IsShowMenu, @ShowFilterFast, @ShowBreadCrumb); SELECT @@IDENTITY
+SQLParameters : @MenuID=18671, @PropertyID=0, @PropertyParentID=0, @BrandID=18243, @IsShowMenu=False, @ShowFilterFast=False, @ShowBreadCrumb=False, 
+Source : VSW.Corev2.0
+TargetSite : VSW.Core.Global.Object ExecuteScalar(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteScalar(String connectionString, String command, Object[] Params)
+   at VSW.Core.Data.SQL.Insert(String connectionString, String tableName, Boolean identity, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Insert(Boolean identity, Object[] Fields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, String[] propertyExec, String[] propertyNotExec, Dictionary`2 customField)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, Expression`1 propertyExec, Expression`1 propertyNotExec, Dictionary`2 customFields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item)
+   at VSW.Lib.CPControllers.WebPropertyConfigController.ValidSave(ModProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\WebPropertyConfigController.cs:line 140
+
+
+Time : 14/09/2024 01:06:24
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : Anonymously Hosted DynamicMethods Assembly
+TargetSite : System.Object lambda_method(System.Runtime.CompilerServices.Closure)
+StackTrace :    at lambda_method(Closure )
+   at VSW.Core.Models.DBToLinQ`1.Lambda(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression exp)
+   at VSW.Core.Models.DBToLinQ`1.CreateQuery(Expression`1 exp)
+   at VSW.Core.Models.DBQuery`1.Where(Expression`1 exp)
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 8
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 14/09/2024 01:06:24
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.6bw7u_mp.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 14/09/2024 01:06:45
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Invalid column name 'PropertyParentID'.
+SQLText : INSERT INTO [Web_PropertyConfig]([MenuID], [PropertyID], [PropertyParentID], [BrandID], [IsShowMenu], [ShowFilterFast], [ShowBreadCrumb]) VALUES(@MenuID, @PropertyID, @PropertyParentID, @BrandID, @IsShowMenu, @ShowFilterFast, @ShowBreadCrumb); SELECT @@IDENTITY
+SQLParameters : @MenuID=18671, @PropertyID=0, @PropertyParentID=0, @BrandID=18243, @IsShowMenu=False, @ShowFilterFast=False, @ShowBreadCrumb=False, 
+Source : VSW.Corev2.0
+TargetSite : VSW.Core.Global.Object ExecuteScalar(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteScalar(String connectionString, String command, Object[] Params)
+   at VSW.Core.Data.SQL.Insert(String connectionString, String tableName, Boolean identity, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Insert(Boolean identity, Object[] Fields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, String[] propertyExec, String[] propertyNotExec, Dictionary`2 customField)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, Expression`1 propertyExec, Expression`1 propertyNotExec, Dictionary`2 customFields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item)
+   at VSW.Lib.CPControllers.WebPropertyConfigController.ValidSave(ModProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\WebPropertyConfigController.cs:line 140
+
+
+Time : 14/09/2024 06:32:04
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : Boolean ValidSave(VSW.Lib.CPControllers.ModProductModel)
+StackTrace :    at VSW.Lib.CPControllers.ModProductController.ValidSave(ModProductModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\ModProductController.cs:line 407
+
+
+Time : 14/09/2024 12:00:34
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Invalid column name 'PropertyParentID'.
+SQLText : UPDATE [Web_PropertyConfig] SET [MenuID]=@MenuID, [PropertyID]=@PropertyID, [PropertyParentID]=@PropertyParentID, [BrandID]=@BrandID, [IsShowMenu]=@IsShowMenu, [ShowFilterFast]=@ShowFilterFast, [ShowBreadCrumb]=@ShowBreadCrumb WHERE [ID]=54
+SQLParameters : @MenuID=18585, @PropertyID=0, @PropertyParentID=0, @BrandID=18243, @IsShowMenu=True, @ShowFilterFast=True, @ShowBreadCrumb=False, 
+Source : VSW.Corev2.0
+TargetSite : Int32 ExecuteNonQuery(System.String, System.String, System.Object[])
+StackTrace :    at VSW.Core.Data.SQLCmd.ExecuteNonQuery(String connectionString, String command, Object[] Params)
+   at VSW.Core.Data.SQL.Update(String connectionString, String tableName, String whereClause, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Update(String whereClause, Object[] fields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, String[] propertyExec, String[] propertyNotExec, Dictionary`2 customField)
+   at VSW.Core.Models.ServiceBase`1.Save(T item, Expression`1 propertyExec, Expression`1 propertyNotExec, Dictionary`2 customFields)
+   at VSW.Core.Models.ServiceBase`1.Save(T item)
+   at VSW.Lib.CPControllers.WebPropertyConfigController.ValidSave(WebPropertyConfigModel model) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\CPControllers\WebPropertyConfigController.cs:line 140
+
+
+Time : 29/09/2024 04:40:29
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Source array was not long enough. Check srcIndex and length, and the array's lower bounds.
+Source : mscorlib
+TargetSite : Void Copy(System.Array, Int32, System.Array, Int32, Int32, Boolean)
+StackTrace :    at System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   at System.Collections.Generic.List`1.set_Capacity(Int32 value)
+   at System.Collections.Generic.List`1.EnsureCapacity(Int32 min)
+   at System.Collections.Generic.List`1.Add(T item)
+   at VSW.Lib.Global.ListItem.List.BuildItem(DataTable dtData, Int32 parentId, String space) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\ListItem\List.cs:line 138
+   at VSW.Lib.Global.ListItem.List.BuildItem(DataTable dtData, Int32 parentId, String space) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\ListItem\List.cs:line 140
+   at CallSite.Target(Closure , CallSite , Type , Object , Int32 , String )
+   at VSW.Lib.Global.ListItem.List.GetList(Object serviceBase, Int32 langId, String type, String where) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\ListItem\List.cs:line 123
+   at VSW.Lib.Global.ListItem.List.GetList(Object serviceBase, Int32 langId, String type) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\ListItem\List.cs:line 94
+   at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 371
+   at ASP.cp_views_webpropertyconfig_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\WebPropertyConfig\Index.ascx:line 52
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 04:40:29
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.wfq8hkuv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 09:01:49
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : System.String ShowDdlMenuByType(System.String, Int32, Int32)
+StackTrace :    at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 374
+   at ASP.cp_views_modproduct_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModProduct\Index.ascx:line 75
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 09:01:49
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.4qbfn5n8.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 09:01:49
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.4qbfn5n8.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 09:02:38
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : System.String ShowDdlMenuByType(System.String, Int32, Int32)
+StackTrace :    at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 374
+   at ASP.cp_views_modproduct_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModProduct\Index.ascx:line 75
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 09:02:38
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.4qbfn5n8.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 09:02:45
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Object reference not set to an instance of an object.
+Source : VSW.Lib
+TargetSite : System.String ShowDdlMenuByType(System.String, Int32, Int32)
+StackTrace :    at VSW.Lib.Global.Utils.ShowDdlMenuByType(String type, Int32 langId, Int32 selectId) in C:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Lib\Global\Utils.cs:line 374
+   at ASP.cp_views_modproduct_index_ascx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\ModProduct\Index.ascx:line 75
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at ASP.cp_views_shared_main_master.__RendervswForm(HtmlTextWriter __w, Control parameterContainer) in c:\Users\ADMIN\OneDrive\Desktop\musicgroup\VSW.Website\CP\Views\Shared\Main.Master:line 95
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   at System.Web.UI.HtmlControls.HtmlForm.Render(HtmlTextWriter output)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.HtmlControls.HtmlForm.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Control.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at VSW.Core.MVC.ViewPageBase.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 09:02:45
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.4qbfn5n8.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 09:37:41
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Value cannot be null.
+Parameter name: type
+Source : mscorlib
+TargetSite : System.Object CreateInstance(System.Type, Boolean)
+StackTrace :    at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 09:37:41
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.wl8a191n.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 09:38:03
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Value cannot be null.
+Parameter name: type
+Source : mscorlib
+TargetSite : System.Object CreateInstance(System.Type, Boolean)
+StackTrace :    at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 09:38:03
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.wl8a191n.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 10:03:31
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Value cannot be null.
+Parameter name: type
+Source : mscorlib
+TargetSite : System.Object CreateInstance(System.Type, Boolean)
+StackTrace :    at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 10:03:31
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.pmfvzdnx.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 10:03:46
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Value cannot be null.
+Parameter name: type
+Source : mscorlib
+TargetSite : System.Object CreateInstance(System.Type, Boolean)
+StackTrace :    at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 10:03:46
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.pmfvzdnx.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 10:06:27
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Value cannot be null.
+Parameter name: type
+Source : mscorlib
+TargetSite : System.Object CreateInstance(System.Type, Boolean)
+StackTrace :    at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 10:06:27
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.pmfvzdnx.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+Time : 29/09/2024 10:06:30
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Value cannot be null.
+Parameter name: type
+Source : mscorlib
+TargetSite : System.Object CreateInstance(System.Type, Boolean)
+StackTrace :    at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at VSW.Core.MVC.CPViewPage.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+Time : 29/09/2024 10:06:30
+IP : ::1
+URL : http://localhost:40010/CP/Default.aspx
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+TargetSite : Boolean HandleError(System.Exception)
+StackTrace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cp_default_aspx.ProcessRequest(HttpContext context) in c:\Users\ADMIN\AppData\Local\Temp\Temporary ASP.NET Files\vs\4a3b27b4\335f73c0\App_Web_default.aspx.42b4d82d.pmfvzdnx.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+

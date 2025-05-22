@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+
+<script runat="server">
+    VSW.Lib.MVC.ViewPage viewPage = VSW.Core.Web.Application.CurrentViewPage as VSW.Lib.MVC.ViewPage;
+</script>
+<!DOCTYPE html>
+<html class="no-js" lang="<%=VSW.Core.Web.Application.CurrentViewPage.CurrentLang.Code.ToLower() %>" xml:lang="<%=VSW.Core.Web.Application.CurrentViewPage.CurrentLang.Code.ToLower() %>">
+<head id="Head" runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta id="description" name="description" content="" runat="server" />
+    <meta id="keywords" name="keywords" content="" runat="server" />
+    <link id="hreflang_name" name="hreflang_name" rel="alternate" hreflang="x-default" href="" runat="server" />
+    <link id="canonical_name" name="canonical_name" rel="canonical" href="" runat="server" />
+    <!-- Schema.org markup for Google+ -->
+    <meta id="schema_name" name="schema_name" itemprop="name" content="" runat="server" />
+    <meta id="schema_description" name="schema_description" itemprop="description" content="" runat="server" />
+    <meta id="schema_image" name="schema_image" itemprop="image" content="" runat="server" />
+    <!-- Open Graph data -->
+    <meta id="og_title" name="og_title" property="og:title" content="" runat="server" />
+    <meta id="og_url" name="og_url" property="og:url" content="" runat="server" />
+    <meta id="og_image" name="og_image" property="og:image" content="" runat="server" />
+    <meta id="og_image_url" name="og_image_url" property="og:image:url" content="" runat="server" />
+    <meta id="og_description" name="og_description" property="og:description" content="" runat="server" />
+    <%--<meta property="fb:app_id" content="" />--%>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="obibi.vn" />
+    <meta name="copyright" content="Copyright &copy; 2020 obibi.vn" />
+    <meta name="generator" content="obibi.vn" />
+    <meta name="language" content="vietnamese" />
+    <meta name="geo.region" content="Vietnamese" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <%--<meta name="robots" content="index,follow" />--%>
+    <link href="/Content/images/favicon.ico?v=1.0" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="/Content/skins/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Content/skins/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/Content/skins/css/hc-offcanvas-nav.carbon.css">
+    <link rel="stylesheet" href="/Content/skins/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/Content/skins/css/fancybox.css">
+    <link rel="stylesheet" href="/Content/skins/css/base.css">
+    <link rel="stylesheet" href="/Content/skins/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="/Content/skins/css/review.css">
+    <link rel="stylesheet" href="/Content/skins/css/style.css">
+    <link rel="stylesheet" href="/Content/skins/css/responsive.css">
+    <link rel="stylesheet" href="/Content/skins/css/style_add.css?v=2.4">
+    <link rel="stylesheet" href="/Content/utils/sweetalert/sweetalert.min.css?v-1.0" />
+    <%if (!string.IsNullOrEmpty(viewPage.CurrentPage.SchemaJson))
+        { %>
+    <script type="application/ld+json">
+        <%=viewPage.CurrentPage.SchemaJson %>
+    </script>
+    <%} %>
+    {RS:Tag_Header}
+</head>
+<body id="body" class="cart-page">
+    {RS:Tag_Body}
+   
+    <div id="master-container">
+        <div id="loading" class="overlayld">
+            <div class="loading">
+                <div class="loader">
+                    <svg class="circular" viewBox="25 25 50 50">
+                        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+                    </svg>
+                </div>
+                <div class="loading-text color">
+                    Vui lòng đợi trong giây lát
+                <span>.</span><span>.</span><span>.</span>
+                </div>
+            </div>
+        </div>
+        <form id="vswForm" runat="server">
+            <div id="header" class="header">
+                <div id="dok-header-top">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="d-flex align-items-center justify-content-between gap-3 position-relative">
+                                <VSW:StaticControl Code="CAdv" VSWID="vswAdvLogo" runat="server" />
+                                <VSW:StaticControl Code="CMenu" VSWID="CMenuCategory" runat="server" />
+                                <VSW:StaticControl Code="CStatic" VSWID="CStaticSearch" runat="server" />
+                            </div>
+                        </div>
+                        <VSW:StaticControl Code="CStatic" VSWID="CStaticSearchMb" DefaultLayout="SearchMb" runat="server" />
+                    </div>
+                </div>
+                <div class="dok-header-overlay"></div>
+            </div>
+            <div id="content" class="content">
+                <VSW:DynamicControl Code="Main" runat="server" />
+            </div>
+            <footer id="footer" class="footer">
+                <VSW:StaticControl Code="CStatic" VSWID="FooterService" DefaultLayout="FooterService" runat="server" />
+                <div class="footer-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <VSW:DynamicControl Code="Footer" runat="server" />
+                        </div>
+                    </div>
+                </div>
+                <VSW:StaticControl Code="CStatic" VSWID="CopyRight" runat="server" />
+            </footer>
+            <VSW:StaticControl Code="CStatic" VSWID="ModalBox" DefaultLayout="ModalBox" runat="server" />
+            <div id="go-top" title="Lên đầu trang"></div>
+
+            <script src="/Content/skins/js/jquery-3.6.3.min.js"></script>
+            <script src="/Content/skins/js/bootstrap.bundle.min.js"></script>
+            <script src="/Content/skins/js/hc-offcanvas-nav.js"></script>
+            <script src="/Content/skins/js/perfect-scrollbar.min.js"></script>
+            <script src="/Content/skins/js//sticky.min.js"></script>
+            <script src="/Content/skins/js/swiper-bundle.min.js"></script>
+            <script src="/Content/skins/js/swiper-element-bundle.min.js"></script>
+            <script src="/Content/skins/js/fancybox.umd.js"></script>
+            <script src="/Content/skins/js/toc.min.js"></script>
+            <script src="/Content/skins/js/isotope.pkgd.min.js"></script>
+            <script src="/Content/skins/js/app.js"></script>
+            <script src="/Content/skins/js/script.js"></script>
+            <!-- main js -->
+            <script src="/Content/skins/js/data.ajax.js"></script>
+            <script type="text/javascript" src="/Content/utils/sweetalert/sweetalert2.min.js"></script>
+            <script type="text/javascript" src="/Content/utils/sweetalert/sweetalert2.helper.js"></script>
+            <script src="/Content/skins/js/library.js"></script>
+        </form>
+    </div>
+    {RS:Tag_Footer}
+</body>
+</html>

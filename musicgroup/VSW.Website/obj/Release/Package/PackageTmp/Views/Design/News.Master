@@ -1,0 +1,39 @@
+﻿JJ Q<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head id="Head" runat="server">
+    <title></title>
+    <meta name="author" content="hung.nguyen.1412@gmail.com" />
+    <meta name="generator" content="logitics.com" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <form id="vswForm" runat="server">
+        <div id="vsw_container">
+            <div style="float: left; width: 30%">
+                <VSW:StaticControl Code="CAdv" VSWID="vswAdvLogo" runat="server" />
+            </div>
+            <div style="float: left; width: 30%">
+                <VSW:StaticControl Code="CMenu" VSWID="CMenuCategory" runat="server" />
+            </div>
+            <div style="float: left; width: 40%">
+                <VSW:StaticControl Code="CStatic" VSWID="CStaticSearch" runat="server" />
+            </div>
+            <div style="clear: both"></div>
+            <VSW:DynamicControl Code="Main" runat="server" />
+            <div style="float: left; width: 50%">
+                <VSW:DynamicControl Code="Left" runat="server" />
+            </div>
+            <div style="float: left; width: 50%">
+                <VSW:DynamicControl Code="Right" runat="server" />
+            </div>
+            <div style="clear: both"></div>
+            <VSW:DynamicControl Code="Footer" runat="server" />
+            <VSW:StaticControl Code="CStatic" VSWID="CopyRight" runat="server" />
+            <div style="clear: both"></div>
+            <VSW:DynamicControl Code="RecycleBin" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
