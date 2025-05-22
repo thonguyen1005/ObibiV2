@@ -1,3 +1,40 @@
-git rm -r --cached **/bin
-git rm -r --cached **/obj
-git commit -m "Xóa bin và obj khỏi repo và thêm .gitignore"
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files.
+
+# Build Folders (bin, obj, etc...)
+**/[Bb]in/
+**/[Oo]bj/
+
+# Rider / VS Code folders
+.idea/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\ Files/
+
+# Backup & log files
+*.bak
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuspec
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.dbmdl
+*.pdb
+*.cache
+*.tmp
+*.temp
