@@ -49,6 +49,7 @@ namespace VSW.Website.Controllers
                     })
                     .ToPagingAsync<ModProductModel>(searchModel.Page, searchModel.PageSize);
 
+            searchModel.TotalRecord = model.TotalCount;
             ViewBag.Model = searchModel;
             return View(model);
         }

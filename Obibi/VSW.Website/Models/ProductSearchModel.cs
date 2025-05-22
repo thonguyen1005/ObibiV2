@@ -2,6 +2,9 @@
 {
     public class ProductSearchModel
     {
+        public int b { get; set; }
+        public string p { get; set; }
+        public string s { get; set; }
         private int _page = 1;
         public int Page
         {

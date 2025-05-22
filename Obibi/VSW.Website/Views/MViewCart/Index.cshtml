@@ -4,6 +4,7 @@
     var DataContext = ViewBag.Model as MOrderModel;
     var lstProduct = DataContext.lstProduct;
     var cart = new Cart();
+    string _controllerName = ViewContext.GetControllerName();
 }
 
 @if (cart.Items.Count < 1)
@@ -44,7 +45,7 @@ else
                                              class="img-fluid">
                                     </a>
                                     <div class="p-cart-remove">
-                                        <a href="javascript:;" onclick="delete_cart(@i)">
+                                        <a href="javascript:;" onclick="deleteCartInGioHang(@i)">
                                             <i class="fa fa-times-circle mr-1"></i>Xoá
                                         </a>
                                     </div>
@@ -92,11 +93,11 @@ else
                                                             {
                                                                 if (z == 0)
                                                                 {
-                                                                    <li><a class="dropdown-item" href="javascript:;" onclick="update_cart(@(i), @(lstProduct[i].QuantityByCart), @lstItem[k].ID, @(lstProduct[i].SizeByCart));">@lstItem[k].Name</a></li>
+                                                                    <li><a class="dropdown-item" href="javascript:;" onclick="updateCart(@(i), @(lstProduct[i].QuantityByCart), @(lstProduct[i].SizeByCart), @lstItem[k].ID);">@lstItem[k].Name</a></li>
                                                                 }
                                                                 else
                                                                 {
-                                                                    <li><a class="dropdown-item" href="javascript:;" onclick="update_cart(@(i), @(lstProduct[i].QuantityByCart), @(lstProduct[i].ColorByCart), @lstItem[k].ID);">@lstItem[k].Name</a></li>
+                                                                    <li><a class="dropdown-item" href="javascript:;" onclick="updateCart(@(i), @(lstProduct[i].QuantityByCart), @lstItem[k].ID, @(lstProduct[i].ColorByCart));">@lstItem[k].Name</a></li>
                                                                 }
                                                             }
                                                         </ul>
@@ -109,7 +110,7 @@ else
                                                 <button type="button" class="decrease">
                                                     <i class="far fa-minus fz-14"></i>
                                                 </button>
-                                                <input type="number" value="@(lstProduct[i].QuantityByCart)" name="qtybutton" onchange="load_cart(this.value,@(i))" class="counter-input" readonly="">
+                                                <input type="number" value="@(lstProduct[i].QuantityByCart)" name="qtybutton" onchange="updateCart(@(i), this.value, @(lstProduct[i].SizeByCart), @(lstProduct[i].ColorByCart))" class="counter-input" readonly="">
                                                 <button type="button" class="increase">
                                                     <i class="far fa-plus fz-14"></i>
                                                 </button>
@@ -202,7 +203,7 @@ else
                 </div>
                 <div class="p-cart-box">
                     <div class="d-flex flex-column w-100 text-center">
-                        <a class="btn-cta order-button mb-3 d-flex align-items-center justify-content-center" href="javascript:void(0)" onclick="document.checkout_form.submit()">
+                        <a class="btn-cta order-button mb-3 d-flex align-items-center justify-content-center" href="javascript:void(0)" onclick="submitCart()">
                             <strong class="text-uppercase text-dark">Đặt hàng</strong>
                         </a>
                     </div>

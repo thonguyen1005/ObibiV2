@@ -1,29 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\VSW.Website\\VSW.Website.csproj": {}
+    "D:\\Git\\ObibiV2\\Obibi\\VSW.Website\\VSW.Website.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj": {
+    "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj",
+        "projectUniqueName": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj",
         "projectName": "VSW.Core.Services",
-        "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core.Services\\obj\\",
+        "projectPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj",
+        "packagesPath": "C:\\Users\\thonv\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thonv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,8 +36,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj"
+              "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj": {
+                "projectPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj"
               }
             }
           }
@@ -48,6 +46,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -83,30 +86,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj": {
+    "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj",
+        "projectUniqueName": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj",
         "projectName": "VSW.Core",
-        "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\obj\\",
+        "projectPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj",
+        "packagesPath": "C:\\Users\\thonv\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thonv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -127,6 +128,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -182,30 +188,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\VSW.Website\\VSW.Website.csproj": {
+    "D:\\Git\\ObibiV2\\Obibi\\VSW.Website\\VSW.Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\VSW.Website\\VSW.Website.csproj",
+        "projectUniqueName": "D:\\Git\\ObibiV2\\Obibi\\VSW.Website\\VSW.Website.csproj",
         "projectName": "VSW.Website",
-        "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\VSW.Website\\VSW.Website.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\VSW.Website\\obj\\",
+        "projectPath": "D:\\Git\\ObibiV2\\Obibi\\VSW.Website\\VSW.Website.csproj",
+        "packagesPath": "C:\\Users\\thonv\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\ObibiV2\\Obibi\\VSW.Website\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thonv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -220,11 +224,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj"
+              "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj": {
+                "projectPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core.Services\\VSW.Core.Services.csproj"
               },
-              "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj"
+              "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj": {
+                "projectPath": "D:\\Git\\ObibiV2\\Obibi\\Core\\VSW.Core\\VSW.Core.csproj"
               }
             }
           }
@@ -233,6 +237,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -299,7 +308,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

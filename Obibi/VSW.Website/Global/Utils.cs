@@ -7,6 +7,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Xml;
@@ -158,7 +159,6 @@ namespace VSW.Website.Global
             }
             return sdatetime;
         }
-
         public static string GetHtmlForSeo(string content)
         {
             if (string.IsNullOrEmpty(content))
@@ -217,6 +217,35 @@ namespace VSW.Website.Global
                 }
             }
             return content;
+        }
+
+        public static string RemoveNonNumeric(string phone)
+        {
+            var sb = new StringBuilder();
+            for (int i = 0; phone != null && i < phone.Length; i++)
+                if (char.IsNumber(phone[i]) || phone[i] == '.')
+                    sb.Append(phone[i]);
+
+            return sb.ToString();
+        }
+        public static bool IsPhone(string phone)
+        {
+            phone = RemoveNonNumeric(phone);
+
+            if (string.IsNullOrEmpty(phone))
+                return false;
+
+            if (!phone.StartsWith("0"))
+                return false;
+
+            if (phone.Length != 10)
+                return false;
+
+            return true;
+        }
+        public static bool IsEmailAddress(string email)
+        {
+            return Regex.IsMatch(email.Trim(), @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
         }
     }
 }

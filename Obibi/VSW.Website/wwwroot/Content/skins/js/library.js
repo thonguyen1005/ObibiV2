@@ -24,68 +24,57 @@ function doSearch(p_url, p_control) {
     location.href = p_url + sURL;
 }
 
-$(document).ready(function () {
-    $(document).on('click', '.addToCartAjax', function () {
-        $('.btnAddToNow').hide();
-        $('.btnAddToCart').show();
-        $('#productIDFromProduct').val($(this).data('id'));
-        var hasProperty = $(this).data('hasproperty');
-        if (typeof hasProperty === 'undefined') {
-            hasProperty = false;
-        }
-        if (hasProperty) {
-            loadProductClassify($(this).data('id'));
-        } else {
-            var size = '';
-            if ($('input[type=radio][name=Size]').length) {
-                size = $("input[name='Size']:checked").val();
-            }
-            var color = '';
-            if ($('input[type=radio][name=Color]').length) {
-                color = $("input[name='Color']:checked").val();
-            }
-            addCart($(this).data('id'), size, color);
-        }
-    });
-    $(document).on('click', '.btnAddToCart', function () {
+$(document).on('click', '.addToCartAjax', function () {
+    $('.btnAddToNow').hide();
+    $('.btnAddToCart').show();
+    $('#productIDFromProduct').val($(this).data('id'));
+    var hasProperty = $(this).data('hasproperty');
+    if (typeof hasProperty === 'undefined') {
+        hasProperty = false;
+    }
+    if (hasProperty) {
+        loadProductClassify($(this).data('id'));
+    } else {
         var size = '';
-        if ($('input[type=radio][name=SizeFromProduct]').length) {
-            size = $("input[name='SizeFromProduct']:checked").val();
+        if ($('input[type=radio][name=Size]').length) {
+            size = $("input[name='Size']:checked").val();
         }
         var color = '';
-        if ($('input[type=radio][name=ColorFromProduct]').length) {
-            color = $("input[name='ColorFromProduct']:checked").val();
+        if ($('input[type=radio][name=Color]').length) {
+            color = $("input[name='Color']:checked").val();
         }
-        addCart($('#productIDFromProduct').val(), size, color);
-    });
-    $(document).on('click', '.btnAddToNow', function () {
-        var size = '';
-        if ($('input[type=radio][name=SizeFromProduct]').length) {
-            size = $("input[name='SizeFromProduct']:checked").val();
-        }
-        var color = '';
-        if ($('input[type=radio][name=ColorFromProduct]').length) {
-            color = $("input[name='ColorFromProduct']:checked").val();
-        }
-        var quantity = 1;
-        if ($('#counterFromProduct').length) {
-            quantity = parseFloat($("#counterFromProduct").val());
-        }
-        if (quantity < 1) quantity = 1;
-
-        location.href = '/gio-hang/Add?ProductID=' + $('#productIDFromProduct').val() + '&Quantity=' + quantity + '&SizeID=' + size + '&ColorID=' + color;
-    });
-
-    _component_select2();
+        addCart($(this).data('id'), size, color);
+    }
+});
+$(document).on('click', '.btnAddToCart', function () {
+    var size = '';
+    if ($('input[type=radio][name=SizeFromProduct]').length) {
+        size = $("input[name='SizeFromProduct']:checked").val();
+    }
+    var color = '';
+    if ($('input[type=radio][name=ColorFromProduct]').length) {
+        color = $("input[name='ColorFromProduct']:checked").val();
+    }
+    addCart($('#productIDFromProduct').val(), size, color);
 });
 
-function delete_cart(index) {
-    Confirm('Thông báo !', 'Bạn chắc chắn muốn xóa sản phẩm này?', '/gio-hang/Delete?Index=' + index);
-}
+$(document).on('click', '.btnAddToNow', function () {
+    var size = '';
+    if ($('input[type=radio][name=SizeFromProduct]').length) {
+        size = $("input[name='SizeFromProduct']:checked").val();
+    }
+    var color = '';
+    if ($('input[type=radio][name=ColorFromProduct]').length) {
+        color = $("input[name='ColorFromProduct']:checked").val();
+    }
+    addCart($('#productIDFromProduct').val(), size, color, () => {
+        location.href = '/gio-hang';
+    });
+});
 
-function update_cart(index, quantity, colorId, sizeId, returnpath) {
-    location.href = '/gio-hang/Update.html?Index=' + index + '&Quantity=' + quantity + '&SizeID=' + sizeId + '&ColorID=' + colorId + '&Quantity=' + quantity + '&returnpath=' + returnpath;
-}
+$(document).ready(function () {
+    _component_select2();
+});
 
 $(function () {
     $('.addcartnow').click(function () {

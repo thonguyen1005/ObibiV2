@@ -48,7 +48,6 @@ namespace VSW.Website.Controllers
                 var model = await _newsRepository.WithSqlText(sql).QueryAsync<ModNewsModel>();
 
                 searchModel.TotalRecord = model.IsNotEmpty() ? model[0].TotalCount : 0;
-
                 ViewBag.Model = searchModel;
                 ViewBag.Tag = id;
                 return View(model);

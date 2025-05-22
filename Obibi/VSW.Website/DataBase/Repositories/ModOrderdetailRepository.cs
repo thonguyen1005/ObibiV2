@@ -6,9 +6,9 @@ using VSW.Website.DataBase.Entities;
 
 namespace VSW.Website.DataBase.Repositories
 {               
-    public class ModOrderdetailRepository : SqlRepository<MOD_ORDERDETAILEntity, int> 
+    public class ModOrderDetailRepository : SqlRepository<MOD_ORDERDETAILEntity, int> 
     {
-        public ModOrderdetailRepository(SqlRepositoryOptions options = null, IWorkingContext context = null) : base(Constant.Datasource, options, context)
+        public ModOrderDetailRepository(SqlRepositoryOptions options = null, IWorkingContext context = null) : base(Constant.Datasource, options, context)
         {
         }
     }

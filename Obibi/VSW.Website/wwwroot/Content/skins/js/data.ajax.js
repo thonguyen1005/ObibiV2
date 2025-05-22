@@ -1,5 +1,4 @@
-﻿
-class Result {
+﻿class Result {
     static FromJson(json) {
         return Object.assign(new Result(), json);
     }
@@ -13,22 +12,21 @@ class Result {
     }
 }
 
-function get_child(ParentID, SelectedID, id, p_option_first) {
+function getChild(parentID, selectedID, id, optionFirst) {
     /*$('#loading').show();*/
-
     $.ajax({
         type: 'GET',
         url: '/ajax/GetChild',
-        data: 'ParentID=' + ParentID + '&SelectedID=' + SelectedID,
+        data: 'ParentID=' + parentID + '&SelectedID=' + selectedID,
         dataType: 'json',
         success: function (response) {
             var data = Result.FromJson(response);
             if (data.IsOk()) {
                 var content = data.Data;
                 if (content != '')
-                    $(id).html(p_option_first + content);
+                    $(id).html(optionFirst + content);
                 else
-                    $(id).html(p_option_first);
+                    $(id).html(optionFirst);
 
                 $(id).select2({
                     language: "vi",
@@ -41,33 +39,32 @@ function get_child(ParentID, SelectedID, id, p_option_first) {
     });
 };
 
-function addCart(ProductID, size, color) {
+function addCart(productID, sizeID, colorID, callback) {
     $('#loading').show();
     var Quantity = 1;
     $.ajax({
         url: '/ajax/AddToCart',
         type: 'GET',
-        data: 'ProductID=' + ProductID + '&Quantity=' + Quantity + '&SizeID=' + size + '&ColorID=' + color,
+        data: 'ProductID=' + productID + '&Quantity=' + Quantity + '&SizeID=' + sizeID + '&ColorID=' + colorID,
         success: function (response) {
             var data = Result.FromJson(response);
             if (data.IsOk()) {
-
                 var content = data.Data.Html;
                 var count = data.Data.CartCount;
                 $(".cart_count").html(count);
                 $(".dok-cart-list").html(content);
-                Alert("Thông báo!", "Đã thêm sản phẩm vào giỏ hàng");
                 $('#loading').hide();
+                showSwalSuccess("Đã thêm sản phẩm vào giỏ hàng", "Thông báo!", callback);
             }
         },
         error: function () { }
     });
 };
 
-function deleteCart(productid, index) {
+function deleteCart(index, callback) {
     showSwalQuestion("Bạn có muốn xóa sản phẩm này khỏi giỏ hàng?", "Thông báo!", (flag) => {
         if (flag) {
-            var dataString = 'ProductID=' + productid + '&Index=' + index;
+            var dataString = 'Index=' + index;
             $.ajax({
                 type: "GET",
                 url: "/ajax/DeleteCart",
@@ -76,8 +73,9 @@ function deleteCart(productid, index) {
                     var data = Result.FromJson(response);
                     if (data.IsOk()) {
                         $("#item-cart-" + index).remove();
-                        $(".cart_count").html(parseFloat($(".cart_count").html()) - 1);
-                        Alert("Thông báo!", 'Đã xóa thành công');
+                        var count = data.Data.CartCount;
+                        $(".cart_count").html(count);
+                        showSwalSuccess("Đã xóa thành công", "Thông báo!", callback);
                     } else {
                         Alert("Thông báo!", data.Message);
                     }
@@ -87,23 +85,6 @@ function deleteCart(productid, index) {
             });
         }
     });
-};
-
-function load_cart(quantity, index) {
-    //$('#loading').show();
-    var dataString = 'Quantity=' + quantity + '&Index=' + index;
-    $.ajax({
-        type: "GET", url: "/ajax/UpdateCart",
-        data: dataString,
-        success: function (data) {
-            var content = data.Html;
-            var js = data.Js;
-            $("#TotalMoney").html(js);
-            //$('#loading').hide();
-        }, error: function () {
-            //$('#loading').hide();
-        }
-    })
 };
 
 function loadProductClassify(productid) {
@@ -118,20 +99,75 @@ function loadProductClassify(productid) {
         color = $("input[name='Color']:checked").val();
     }
     $.ajax({
-        url: '/ajax/LoadPropertyBuy.html',
+        url: '/ajax/LoadPropertyBuy',
         type: 'GET',
         data: 'ProductID=' + productid + '&SizeID=' + size + '&ColorID=' + color,
         success: function (data) {
-            var header = data.Params;
-            var body = data.Html;
-            $("#boxHeaderProduct").html(header);
-            $("#boxBodyProduct").html(body);
-            $('#dok-buy-desktop').modal('show');
+            var data = Result.FromJson(response);
+            if (data.IsOk()) {
+                var header = data.Data.Header;
+                var body = data.Data.Html;
+                $("#boxHeaderProduct").html(header);
+                $("#boxBodyProduct").html(body);
+                $('#dok-buy-desktop').modal('show');
+            } else {
+                Alert("Thông báo!", data.Message);
+            }
             $('#loading').hide();
         },
         error: function () { }
     });
 }
+
+function deleteCartInGioHang(index) {
+    deleteCart(index, () => {
+        location.reload();
+    });
+}
+
+function updateCart(index, quantity, sizeID, colorID) {
+    $.ajax({
+        url: '/ajax/UpdateCart',
+        type: 'GET',
+        data: 'Index=' + index + '&Quantity=' + quantity + '&SizeID=' + sizeID + '&ColorID=' + colorID,
+        success: function (response) {
+            var data = Result.FromJson(response);
+            if (data.IsOk()) {
+                var content = data.Data.Html;
+                var count = data.Data.CartCount;
+                var sum = data.Data.CartSum;
+                $(".cart_count").html(count);
+                $(".dok-cart-list").html(content);
+                $("#TotalMoney").html(sum + " ₫");
+                $('#loading').hide();
+                showSwalSuccess("Đã cập nhật thành công", "Thông báo!");
+            }
+        },
+        error: function () { }
+    });
+}
+
+function submitCart() {
+    $('#loading').show();
+    var formData = new FormData($('#checkout_form')[0]);
+    $.ajax({
+        url: '/MViewCart/AddPOST',
+        type: 'POST',
+        data: formData,
+        success: function (response) {
+            var data = Result.FromJson(response);
+            if (data.IsOk()) {
+                $('#loading').hide();
+                showSwalSuccess("Đã đặt hàng thành công.", "Thông báo!", () => {
+                    location.href = '/hoan-thanh-don-hang?OrderID=' + data.Data;
+                });
+            }
+        },
+        error: function () { }
+    });
+}
+
+
 
 function loadProductMore() {
     $('#loading').show();

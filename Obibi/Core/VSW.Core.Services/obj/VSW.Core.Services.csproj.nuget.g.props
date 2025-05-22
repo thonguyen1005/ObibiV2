@@ -5,15 +5,14 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ADMIN\.nuget\packages\;C:\Program Files (x86)\DevExpress 20.2\Components\Offline Packages;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages;C:\Program Files (x86)\Microsoft\Xamarin\NuGet\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\thonv\.nuget\packages\;C:\Program Files (x86)\DevExpress 20.2\Components\Offline Packages;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.9.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\ADMIN\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\thonv\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\DevExpress 20.2\Components\Offline Packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
-    <SourceRoot Include="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <None Include="$(NuGetPackageRoot)linq2db.sqlserver\5.4.1\contentFiles\any\any\LinqToDB.Templates\CopyMe.SqlServer.tt.txt" Condition="Exists('$(NuGetPackageRoot)linq2db.sqlserver\5.4.1\contentFiles\any\any\LinqToDB.Templates\CopyMe.SqlServer.tt.txt')">
@@ -166,6 +165,6 @@
     <Import Project="$(NuGetPackageRoot)linq2db.sqlserver\5.4.1\build\linq2db.SqlServer.props" Condition="Exists('$(NuGetPackageRoot)linq2db.sqlserver\5.4.1\build\linq2db.SqlServer.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkglinq2db_SqlServer Condition=" '$(Pkglinq2db_SqlServer)' == '' ">C:\Users\ADMIN\.nuget\packages\linq2db.sqlserver\5.4.1</Pkglinq2db_SqlServer>
+    <Pkglinq2db_SqlServer Condition=" '$(Pkglinq2db_SqlServer)' == '' ">C:\Users\thonv\.nuget\packages\linq2db.sqlserver\5.4.1</Pkglinq2db_SqlServer>
   </PropertyGroup>
 </Project>
