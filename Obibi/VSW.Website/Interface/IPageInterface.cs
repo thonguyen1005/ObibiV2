@@ -10,6 +10,7 @@ namespace VSW.Website.Interface
             get;
             set;
         }
+        int ParentID { get; set; }
         string Code
         {
             get;

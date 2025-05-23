@@ -1,6 +1,7 @@
 ﻿using LinqToDB;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Linq;
 using VSW.Core;
 using VSW.Core.Services;
@@ -22,11 +23,13 @@ namespace VSW.Website.Controllers
         public int PageSize { get; set; } = 20;
 
         private ModProductRepository _repo = null;
+        private SysPageRepository _repoPage = null;
         private ModPropertyRepository _repoProperty = null;
         private WebMenuRepository _repoMenu = null;
         public MProductController(IWorkingContext<MProductController> context) : base(context)
         {
             _repo = new ModProductRepository(context: context);
+            _repoPage = new SysPageRepository(context: context);
             _repoProperty = new ModPropertyRepository(context: context);
             _repoMenu = new WebMenuRepository(context: context);
         }
@@ -102,8 +105,29 @@ namespace VSW.Website.Controllers
                                     JOIN Web_Property wp2 ON wp2.ID = mp.PropertyValueID
                                     JOIN Mod_Product p ON mp.ProductID = p.ID";
                 sqlProperty += " Where p.MenuID in (" + string.Join(",", lstMenuId) + @")";
-                ViewBag.Property = await _repoProperty.WithSqlText(sqlProperty).QueryAsync<ModPropertyModel>();
+                ViewBag.Propertys = await _repoProperty.WithSqlText(sqlProperty).QueryAsync<ModPropertyModel>();
+
+                string sqlBrand = @"SELECT *
+                                    FROM Web_Menu m ";
+                sqlBrand += " Where m.ID in (select p.BrandID from Mod_Product p where p.MenuID in (" + string.Join(",", lstMenuId) + @") group by p.BrandID)";
+                ViewBag.Brands = await _repoProperty.WithSqlText(sqlBrand).QueryAsync<WEB_MENUEntity>();
             }
+
+            var lstPage = await _repoPage.GetTable()
+                                        .Where(o => o.LangID == CurrentSite.LangID && o.Activity == true)
+                                        .Where(o => o.ParentID == CurrentPage.ID)
+                                        .OrderBy(o => new { o.Order, o.ID })
+                                        .ToListAsync();
+            if (lstPage.IsEmpty() && CurrentPage.ParentID > 1)
+            {
+                lstPage = await _repoPage.GetTable()
+                                        .Where(o => o.LangID == CurrentSite.LangID && o.Activity == true)
+                                        .Where(o => o.ParentID == CurrentPage.ParentID)
+                                        .OrderBy(o => new { o.Order, o.ID })
+                                        .ToListAsync();
+            }
+
+            ViewBag.Pages = lstPage;
 
             return View(model);
         }

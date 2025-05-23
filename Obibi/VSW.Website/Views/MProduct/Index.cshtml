@@ -2,7 +2,21 @@
 @{
     var searchModel = ViewBag.Model as ProductSearchModel;
     var listItem = Model.Items;
-    var lstProperty = ViewBag.Property as List<ModPropertyModel>();
+    var lstProperty = ViewBag.Propertys as List<ModPropertyModel>;
+    var listBrand = ViewBag.Brands as List<WEB_MENUEntity>;
+    var listMenu = ViewBag.Pages as List<SYS_PAGEEntity>;
+    var lstPropertyRoot = new List<ModPropertyModel>();
+    if (lstProperty.IsNotEmpty())
+    {
+        lstPropertyRoot = lstProperty.GroupBy(o => new { o.PropertyID, o.PropertyCode, o.PropertyName }).Select(o => new
+        ModPropertyModel
+                {
+                    PropertyID = o.Key.PropertyID,
+                    PropertyCode = o.Key.PropertyCode,
+                    PropertyName = o.Key.PropertyName
+                })
+                .ToList();
+    }
 }
 @* <section class="dok-breadcrumb">
     <div class="container">
@@ -26,184 +40,175 @@
     </div>
     </div>
     </section> *@
-@if (lstProperty.IsNotEmpty())
-{
-    var lstPropertyRoot = lstProperty.GroupBy(o => new { o.PropertyID, o.PropertyCode, o.PropertyName }).Select(o => new
-    {
-        PropertyID = o.Key.PropertyID,
-        PropertyCode = o.Key.PropertyCode,
-        PropertyName = o.Key.PropertyName
-    }).ToList();
-    @* <div class="dok-brands mb-4">
-        <div class="container">
-            <div>
-                <div class="dok-brand-list swiper">
-                    <div class="swiper-wrapper">
-                        <%for (var i = 0; listBrand != null && i < listBrand.Count; i += 2)
-                        {%>
+
+@(listBrand.IsNotEmpty()){
+<div class="dok-brands mb-4">
+    <div class="container">
+        <div>
+            <div class="dok-brand-list swiper">
+                <div class="swiper-wrapper">
+                    @for (var i = 0; listBrand.IsNotEmpty() && i < listBrand.Count; i += 2)
+                    {
                         <div class="swiper-slide">
                             <div class="category-wrap-item filterBrand">
-                                <a class="category-item" href="javascript:addBrandReload(this, <%=listBrand[i].ID %>)" data-id="<%=listBrand[i].ID %>" title="<%=listBrand[i].Name %>">
-                                    <%if (!string.IsNullOrEmpty(listBrand[i].File))
-                                    { %>
-                                    <img alt="<%=listBrand[i].Name %>" height="30" style="max-height:30px" class="filter-brand__img" src="<%=Utils.GetWebPFile(listBrand[i].File, 4, 245, 50) %>" />
-                                    <%}
+                                <a class="category-item" href="javascript:addBrandReload(this, @listBrand[i].ID)" data-id="@listBrand[i].ID" title="@listBrand[i].Name">
+                                    @if (!string.IsNullOrEmpty(listBrand[i].File))
+                                    {
+                                        <img alt="@listBrand[i].Name" height="30" style="max-height:30px" class="filter-brand__img" src="@await ImageHelper.ResizeToWebpAsync(listBrand[i].File, 245, 50)" />
+                                    }
                                     else
-                                    { %>
-                                    <%=listBrand[i].Name %>
-                                    <%} %>
+                                    {
+                                        @listBrand[i].Name
+                                    }
                                 </a>
 
-                                <%if (listBrand.Count > i + 1)
-                                { %>
-                                <a class="category-item" href="javascript:addBrandReload(this, <%=listBrand[i + 1].ID %>)" data-id="<%=listBrand[i + 1].ID %>" title="<%=listBrand[i + 1].Name %>">
-                                    <%if (!string.IsNullOrEmpty(listBrand[i + 1].File))
-                                    { %>
-                                    <img alt="<%=listBrand[i + 1].Name %>" height="30" style="max-height:30px" class="filter-brand__img" src="<%=Utils.GetWebPFile(listBrand[i + 1].File, 4, 245, 50) %>" />
-                                    <%}
-                                    else
-                                    { %>
-                                    <%=listBrand[i + 1].Name %>
-                                    <%} %>
-                                </a>
-                                <%} %>
+                                @if (listBrand.Count > i + 1)
+                                {
+                                    <a class="category-item" href="javascript:addBrandReload(this, @(listBrand[i + 1].ID))" data-id="@(listBrand[i + 1].ID)" title="@(listBrand[i + 1].Name)">
+                                        @if (!string.IsNullOrEmpty(listBrand[i + 1].File))
+                                        {
+                                            <img alt="@(listBrand[i + 1].ID)" height="30" style="max-height:30px" class="filter-brand__img" src="@await ImageHelper.ResizeToWebpAsync(listBrand[i + 1].File, 245, 50)" />
+                                        }
+                                        else
+                                        {
+                                            @(listBrand[i + 1].Name)
+                                        }
+                                    </a>
+                                }
                             </div>
                         </div>
-                        <%} %>
-                    </div>
-                    <div class="swiper-pagination position-static"></div>
+                    }
                 </div>
+                <div class="swiper-pagination position-static"></div>
             </div>
         </div>
-    </div> *@
+    </div>
+</div>
+}
 
-    <div class="dok-product-filter desktop d-lg-block d-none">
-        <div class="container">
-            <div class="dok-filters">
-                <div class="dok-filter-item dok-filter-box">
-                    <div class="dok-combination">
-                        <a class="openpopup collapsed" data-bs-toggle="collapse" href="#dok_filter_total"
-                           role="button" aria-expanded="false" aria-controls="dok_filter_total">
-                            <i class=" far fa-bars-filter"></i>Bộ lọc <span class="filter-count"></span>
-                        </a>
-                        <div class="collapse custom-scrollbar dok_filter_total" id="dok_filter_total">
-                            <button class="close-popup-total">
-                                <i class="fa fa-xmark fz-16 me-2"></i>Đóng
-                            </button>
-                            <div class="wrap custom-scrollbar">
-                                <div class="show-total-main">
-                                    @* <%if (listBrand != null && listBrand.Count > 0)
-                                { %>
-                                <div class="show-total-item warpper-manu-inside">
-                                <p class="show-total-txt">Hãng</p>
-                                <div class="filter-list filterBrand">
-                                <%for (var i = 0; listBrand != null && i < listBrand.Count; i++)
-                                {%>
-                                <a href="javascript:addBrand(this, <%=listBrand[i].ID %>)" data-id="<%=listBrand[i].ID %>" class="c-btnbox filter-manu" title="<%=listBrand[i].Name %>">
-                                <%if (!string.IsNullOrEmpty(listBrand[i].File))
-                                { %>
-                                <img alt="<%=listBrand[i].Name %>" width="68" height="30" class="img-fluid" src="<%=Utils.GetWebPFile(listBrand[i].File, 4, 68, 30) %>" />
-                                <%}
-                                else
-                                { %>
-                                <%=listBrand[i].Name %>
-                                <%} %>
-                                </a>
-                                <%} %>
-                                </div>
-                                </div>
-                                <div class="filter-border"></div>
-                                <%} %>
-                                <%if (listMenu != null && listMenu.Count > 0)
-                                { %>
-                                <div class="show-total-item clearfix warpper-manu-inside arranged">
-                                <p class="show-total-txt">Phân loại</p>
-                                <div class="filter-list filterMenu">
-                                <%for (var i = 0; listMenu != null && i < listMenu.Count; i++)
+<div class="dok-product-filter desktop d-lg-block d-none">
+    <div class="container">
+        <div class="dok-filters">
+            <div class="dok-filter-item dok-filter-box">
+                <div class="dok-combination">
+                    <a class="openpopup collapsed" data-bs-toggle="collapse" href="#dok_filter_total"
+                       role="button" aria-expanded="false" aria-controls="dok_filter_total">
+                        <i class=" far fa-bars-filter"></i>Bộ lọc <span class="filter-count"></span>
+                    </a>
+                    <div class="collapse custom-scrollbar dok_filter_total" id="dok_filter_total">
+                        <button class="close-popup-total">
+                            <i class="fa fa-xmark fz-16 me-2"></i>Đóng
+                        </button>
+                        <div class="wrap custom-scrollbar">
+                            <div class="show-total-main">
+                                @if (listBrand.IsNotEmpty())
                                 {
-                                %>
-                                <a href="javascript:addMenu(this, <%=listMenu[i].MenuID %>, '<%=listMenu[i].Code %>')" data-id="<%=listMenu[i].MenuID %>" class="c-btnbox <%=ViewPage.IsPageActived(listMenu[i]) ? " active" : "" %>
-                                filter-manu" title="<%=listMenu[i].Name %>">
-                                <%if (!string.IsNullOrEmpty(listMenu[i].File))
-                                { %>
-                                <img alt="<%=listMenu[i].Name %>" width="68" height="30" class="img-fluid" src="<%=Utils.GetWebPFile(listMenu[i].File, 4, 68, 30) %>" />
-                                <%}
-                                else
-                                { %>
-                                <%=!string.IsNullOrEmpty(listMenu[i].AliasName) ? listMenu[i].AliasName : listMenu[i].Name %>
-                                <%} %>
-                                </a>
-                                <%} %>
-                                </div>
-                                </div>
-                                <%} %> *@
-                                    @if (lstPropertyRoot.IsNotEmpty())
-                                    {
-                                        int zz = 0;
-                                        foreach (var item in lstPropertyRoot)
-                                        {
-                                            var listChildItem = lstProperty.Where(o => o.PropertyID == item.PropertyID).ToList();
-                                            if (listChildItem.IsEmpty()) continue;
-                                            zz++;
-
-                                            if (zz == 3)
+                                    <div class="show-total-item warpper-manu-inside">
+                                        <p class="show-total-txt">Hãng</p>
+                                        <div class="filter-list filterBrand">
+                                            @for (var i = 0; listBrand != null && i < listBrand.Count; i++)
                                             {
-                                                <div class="filter-border"></div>
-                                            }
-                                            <div class="show-total-item count-item">
-                                                <p class="show-total-txt">@item.PropertyName</p>
-                                                <div class="filter-list filterAtr filterProperty filter@(item.PropertyCode)">
-                                                    @for (var i = 0; listChildItem != null && i < listChildItem.Count; i++)
+                                                <a href="javascript:addBrand(this, @listBrand[i].ID)" data-id="@listBrand[i].ID" class="c-btnbox filter-manu" title="@listBrand[i].Name">
+                                                    @if (!string.IsNullOrEmpty(listBrand[i].File))
                                                     {
-                                                        <a href="javascript:addAtr(this, @listChildItem[i].PropertyValueID, '@item.PropertyCode')" data-id="@listChildItem[i].PropertyValueID" title="@listChildItem[i].PropertyValueName" class="c-btnbox">
-                                                            @if (!string.IsNullOrEmpty(listChildItem[i].File))
-                                                            {
-                                                                <img alt="@listChildItem[i].PropertyValueName" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listChildItem[i].File, 68, 30)" />
-                                                            }
-                                                            else
-                                                            {
-                                                                @listChildItem[i].PropertyValueName
-                                                            }
-                                                        </a>
+                                                        <img alt="@listBrand[i].Name" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listBrand[i].File, 68, 30)" />
                                                     }
-                                                </div>
-                                            </div>
+                                                    else
+                                                    {
+                                                        @listBrand[i].Name
+                                                    }
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                    <div class="filter-border"></div>
+                                }
+                                @if (listMenu.IsNotEmpty())
+                                {
+                                    <div class="show-total-item clearfix warpper-manu-inside arranged">
+                                        <p class="show-total-txt">Phân loại</p>
+                                        <div class="filter-list filterMenu">
+                                            @for (var i = 0; listMenu != null && i < listMenu.Count; i++)
+                                            {
+                                                <a href="javascript:addMenu(this, @listMenu[i].MenuID, '@listMenu[i].Code')" data-id="@listMenu[i].MenuID" class="c-btnbox @(listMenu[i].ID == Html.CurrentPage().ID ? " active" : "") filter-manu" title="@listMenu[i].Name">
+                                                    @if (!string.IsNullOrEmpty(listMenu[i].File))
+                                                    {
+                                                        <img alt="@listMenu[i].Name" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listMenu[i].File, 68, 30)" />
+                                                    }
+                                                    else
+                                                    {
+                                                        @(!string.IsNullOrEmpty(listMenu[i].AliasName) ? listMenu[i].AliasName : listMenu[i].Name)
+                                                    }
+                                                </a>
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                                @if (lstPropertyRoot.IsNotEmpty())
+                                {
+                                    int zz = 0;
+                                    foreach (var item in lstPropertyRoot)
+                                    {
+                                        var listChildItem = lstProperty.Where(o => o.PropertyID == item.PropertyID).ToList();
+                                        if (listChildItem.IsEmpty()) continue;
+                                        zz++;
 
-                                            @if (zz == 3) zz = 0;
+                                        if (zz == 3)
+                                        {
+                                            <div class="filter-border"></div>
                                         }
+                                        <div class="show-total-item count-item">
+                                            <p class="show-total-txt">@item.PropertyName</p>
+                                            <div class="filter-list filterAtr filterProperty filter@(item.PropertyCode)">
+                                                @for (var i = 0; listChildItem != null && i < listChildItem.Count; i++)
+                                                {
+                                                    <a href="javascript:addAtr(this, @listChildItem[i].PropertyValueID, '@item.PropertyCode')" data-id="@listChildItem[i].PropertyValueID" title="@listChildItem[i].PropertyValueName" class="c-btnbox">
+                                                        @if (!string.IsNullOrEmpty(listChildItem[i].File))
+                                                        {
+                                                            <img alt="@listChildItem[i].PropertyValueName" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listChildItem[i].File, 68, 30)" />
+                                                        }
+                                                        else
+                                                        {
+                                                            @listChildItem[i].PropertyValueName
+                                                        }
+                                                    </a>
+                                                }
+                                            </div>
+                                        </div>
+
+                                        @if (zz == 3) zz = 0;
                                     }
-                                </div>
+                                }
                             </div>
-                            <div class="filter-button filter-button--total" style="display: block;">
-                                <span onclick="removeAll();" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</span>
-                                <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
-                            </div>
+                        </div>
+                        <div class="filter-button filter-button--total" style="display: block;">
+                            <span onclick="removeAll();" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</span>
+                            <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
                         </div>
                     </div>
                 </div>
-
-                <% if (listBrand != null && listBrand.Count > 0)
-                {
-                %>
+            </div>
+            @if (listBrand.IsNotEmpty())
+            {
                 <div class="dok-filter-item">
                     <div class="dropdown filter-box">
                         <a class="dropdown-toggle filter-box-txt" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="false">Hãng</a>
 
                         <div class="dropdown-menu">
                             <div class="dropdown-content filterBrand">
-                                <%for (var i = 0; listBrand != null && i < listBrand.Count; i++)
-                                {%>
-                                <a href="javascript:addBrand(this, <%=listBrand[i].ID %>)" data-id="<%=listBrand[i].ID %>" data-name="<%=listBrand[i].Name %>" class="c-btnbox filter-manu" title="<%=listBrand[i].Name %>">
-                                    <%if (!string.IsNullOrEmpty(listBrand[i].File))
-                                    { %>
-                                    <img alt="<%=listBrand[i].Name %>" width="68" height="30" class="img-fluid" src="<%=Utils.GetWebPFile(listBrand[i].File, 4, 68, 30) %>" />
-                                    <%}
-                                    else
-                                    { %>
-                                    <%=listBrand[i].Name %>
-                                    <%} %>
-                                </a>
-                                <%} %>
+                                @for (var i = 0; listBrand != null && i < listBrand.Count; i++)
+                                {
+                                    <a href="javascript:addBrand(this, @listBrand[i].ID)" data-id="@listBrand[i].ID" data-name="@listBrand[i].Name" class="c-btnbox filter-manu" title="@listBrand[i].Name">
+                                        @if (!string.IsNullOrEmpty(listBrand[i].File))
+                                        {
+                                            <img alt="@listBrand[i].Name" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listBrand[i].File, 68, 30)" />
+                                        }
+                                        else
+                                        {
+                                            @listBrand[i].Name
+                                        }
+                                    </a>
+                                }
                             </div>
                             <div class="filter-button filter-button--total" style="display: block;">
                                 <a href="javascript:removeAllBrand();" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
@@ -212,160 +217,155 @@
                         </div>
                     </div>
                 </div>
-                <%} %>
-                <% if (listMenu != null && listMenu.Count > 0)
-                {
-                var check = listMenu.Where(o => o.ID == ViewPage.CurrentPage.ID).FirstOrDefault();
-                %>
+            }
+
+            @if (listMenu != null && listMenu.Count > 0)
+            {
+                var check = listMenu.Where(o => o.ID == Html.CurrentPage().ID).FirstOrDefault();
+
                 <div class="dok-filter-item">
                     <div class="dropdown filter-menu-out">
-                        <a class="dropdown-toggle <%=check != null ? " active" : "" %>" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="false"><%=check != null ? check.Name : "Phân loại" %></a>
+                        <a class="dropdown-toggle @(check != null ? " active" : "")" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="false">@(check != null ? check.Name : "Phân loại")</a>
                         <div class="dropdown-menu" style="">
                             <div class="dropdown-content filterMenu">
-                                <%for (var i = 0; listMenu != null && i < listMenu.Count; i++)
+                                @for (var i = 0; listMenu != null && i < listMenu.Count; i++)
                                 {
-                                %>
-                                <a href="javascript:addMenu(this, <%=listMenu[i].MenuID %>, '<%=listMenu[i].Code %>')" data-id="<%=listMenu[i].MenuID %>" class="c-btnbox <%=ViewPage.IsPageActived(listMenu[i]) ? " active" : "" %>
-                                    filter-manu" title="<%=listMenu[i].Name %>">
-                                    <%if (!string.IsNullOrEmpty(listMenu[i].File))
-                                    { %>
-                                    <img alt="<%=listMenu[i].Name %>" width="68" height="30" class="img-fluid" src="<%=Utils.GetWebPFile(listMenu[i].File, 4, 68, 30) %>" />
-                                    <%}
-                                    else
-                                    { %>
-                                    <%=!string.IsNullOrEmpty(listMenu[i].AliasName) ? listMenu[i].AliasName : listMenu[i].Name %>
-                                    <%} %>
-                                </a>
-                                <%} %>
+                                    <a href="javascript:addMenu(this, @listMenu[i].MenuID, '@listMenu[i].Code')" data-id="@listMenu[i].MenuID" class="c-btnbox @(check != null ? " active" : "") filter-manu" title="@listMenu[i].Name)">
+                                        @if (!string.IsNullOrEmpty(listMenu[i].File))
+                                        {
+                                            <img alt="@listMenu[i].Name)" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listMenu[i].File, 68, 30)" />
+                                        }
+                                        else
+                                        {
+                                            @(!string.IsNullOrEmpty(listMenu[i].AliasName) ? listMenu[i].AliasName : listMenu[i].Name)
+                                        }
+                                    </a>
+                                }
                             </div>
                             <div class="filter-button filter-button--total" style="display: block;">
-                                <a href="javascript:removeAllMenu(<%=ViewPage.CurrentPage.MenuID %>, '<%=ViewPage.CurrentPage.Code %>');" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
+                                <a href="javascript:removeAllMenu(@(Html.CurrentPage().MenuID), '@Html.CurrentPage().Code');" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
                                 <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <%} %>
-                <%
-                if (listItem != null)
+            }
+            @if (lstPropertyRoot.IsNotEmpty())
+            {
+                foreach (var item in lstPropertyRoot)
                 {
-                int z = 0;
-                foreach (var item in listItem.Keys)
-                {
-                z++;
-                var listChildItem = listItem[item];
-                if (listChildItem == null) continue;
-                if (listChildItem.Count < 1) continue;
-                %>
-                <div class="dok-filter-item">
-                    <div class="dropdown filter-box">
-                        <a class="dropdown-toggle filter-box-txt" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="false" data-name="<%=item.Name %>"><%=item.Name %></a>
-                        <div class="dropdown-menu" style="">
-                            <div class="dropdown-content filterAtr filterProperty filter<%=item.Code %>">
-                                <%for (var i = 0; listChildItem != null && i < listChildItem.Count; i++)
-                                {%>
-                                <a href="javascript:addAtr(this, <%=listChildItem[i].ID %>, '<%=item.Code %>')" data-id="<%=listChildItem[i].ID %>" data-name="<%=listChildItem[i].Name %>" title="<%=listChildItem[i].Name %>" class="c-btnbox">
-                                    <%if (!string.IsNullOrEmpty(listChildItem[i].File))
-                                    { %>
-                                    <img alt="<%=listChildItem[i].Name %>" width="68" height="30" class="img-fluid" src="<%=Utils.GetWebPFile(listChildItem[i].File, 4, 68, 30) %>" />
-                                    <%}
-                                    else
-                                    { %>
-                                    <%=listChildItem[i].Name %>
-                                    <%} %>
-                                </a>
-                                <%} %>
-                            </div>
-                            <div class="filter-button filter-button--total" style="display: block;">
-                                <a href="javascript:removeAllAtr('<%=item.Code %>');" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
-                                <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <%}
-                } %>
-            </div>
+                    var listChildItem = lstProperty.Where(o => o.PropertyID == item.PropertyID).ToList();
+                    if (listChildItem.IsEmpty()) continue;
 
-            <div class="dok-sort-cate">
-                <div class="dok-sort-cate-right">
-                    <h1 class="sort-total pageProductName"><b class="countProduct"></b>&nbsp;&nbsp;<%=ViewPage.CurrentPage.Name %></h1>
-                    <%-- <div class="box-checkbox extend">
-                        <a href="" class="c-checkitem" rel="nofollow">
-                            <span class="tick-checkbox"></span>
-                            <p>Giảm giá</p>
-                        </a>
-                        <a href="" class="c-checkitem" rel="nofollow">
-                            <span class="tick-checkbox"></span>
-                            <p>Trả Góp 0%</p>
-                        </a>
-                        <a href="" class="c-checkitem active" rel="nofollow">
-                            <span class="tick-checkbox"></span>
-                            <p>Mới 2023</p>
-                        </a>
-                    </div>--%>
-                </div>
-                <div class="dok-sort-cate-left">
-                    <div class="dok-dropdown dropdown">
-                        <button class="dok-dropdown__cta" data-bs-toggle="dropdown" data-bs-auto-close="false">
-                            <span>
-                                Xếp theo:
-                                <%if (SortMode == "view")
-                                { %>
-                                Quan tâm nhất
-                                <%} %>
-                                <%else if (SortMode == "price_asc")
-                                { %>
-                                Giá thấp đến cao
-                                <%} %>
-                                <%else if (SortMode == "price_desc")
-                                { %>
-                                Giá cao xuống thấp
-                                <%} %>
-                                <%else if (SortMode == "buy")
-                                { %>
-                                Bán chạy nhất
-                                <%} %>
-                            </span>
-                        </button>
-                        <div class="dok-dropdown__content dropdown-menu dropdown-menu-end">
-                            <div class="dok-dropdown__item position-desc">
-                                <a class="sort-link <%=(SortMode == " view") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "view") %>">Quan tâm nhất</a>
+                    <div class="dok-filter-item">
+                        <div class="dropdown filter-box">
+                            <a class="dropdown-toggle filter-box-txt" href="javascript:;" data-bs-toggle="dropdown" data-bs-auto-close="false" data-name="@(item.PropertyName)">@(item.PropertyName)</a>
+                            <div class="dropdown-menu" style="">
+                                <div class="dropdown-content filterAtr filterProperty filter@(item.PropertyCode)">
+                                    @for (var i = 0; listChildItem != null && i < listChildItem.Count; i++)
+                                    {
+                                        <a href="javascript:addAtr(this, @listChildItem[i].PropertyValueID, '@(item.PropertyCode)')" data-id="@listChildItem[i].PropertyValueID" data-name="@listChildItem[i].PropertyValueName" title="@listChildItem[i].PropertyValueName" class="c-btnbox">
+                                            @if (!string.IsNullOrEmpty(listChildItem[i].File))
+                                            {
+                                                <img alt="@listChildItem[i].PropertyValueName" width="68" height="30" class="img-fluid" src="@await ImageHelper.ResizeToWebpAsync(listChildItem[i].File, 68, 30)" />
+                                            }
+                                            else
+                                            {
+                                                @listChildItem[i].PropertyValueName
+                                            }
+                                        </a>
+                                    }
+                                </div>
+                                <div class="filter-button filter-button--total" style="display: block;">
+                                    <a href="javascript:removeAllAtr('@(item.PropertyCode)');" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
+                                    <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
+                                </div>
                             </div>
-                            <div class="dok-dropdown__item price-asc">
-                                <a class="sort-link <%=(SortMode == " price_asc") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "price_asc") %>">Giá thấp đến cao</a>
-                            </div>
-                            <div class="dok-dropdown__item price-desc">
-                                <a class="sort-link <%=(SortMode == " price_desc") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "price_desc") %>">Giá cao xuống thấp</a>
-                            </div>
-                            <div class="dok-dropdown__item popularity-desc">
-                                <a class="sort-link <%=(SortMode == " buy") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "buy") %>">Bán chạy nhất</a>
-                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+        <div class="dok-sort-cate">
+            <div class="dok-sort-cate-right">
+                <h1 class="sort-total pageProductName"><b class="countProduct"></b>&nbsp;&nbsp;@Html.CurrentPage().Name</h1>
+                @* <div class="box-checkbox extend">
+                <a href="" class="c-checkitem" rel="nofollow">
+                <span class="tick-checkbox"></span>
+                <p>Giảm giá</p>
+                </a>
+                <a href="" class="c-checkitem" rel="nofollow">
+                <span class="tick-checkbox"></span>
+                <p>Trả Góp 0%</p>
+                </a>
+                <a href="" class="c-checkitem active" rel="nofollow">
+                <span class="tick-checkbox"></span>
+                <p>Mới 2023</p>
+                </a>
+                </div> *@
+            </div>
+            <div class="dok-sort-cate-left">
+                <div class="dok-dropdown dropdown">
+                    <button class="dok-dropdown__cta" data-bs-toggle="dropdown" data-bs-auto-close="false">
+                        <span>
+                            Xếp theo:
+                            <%if (SortMode == "view")
+                            { %>
+                            Quan tâm nhất
+                            <%} %>
+                            <%else if (SortMode == "price_asc")
+                            { %>
+                            Giá thấp đến cao
+                            <%} %>
+                            <%else if (SortMode == "price_desc")
+                            { %>
+                            Giá cao xuống thấp
+                            <%} %>
+                            <%else if (SortMode == "buy")
+                            { %>
+                            Bán chạy nhất
+                            <%} %>
+                        </span>
+                    </button>
+                    <div class="dok-dropdown__content dropdown-menu dropdown-menu-end">
+                        <div class="dok-dropdown__item position-desc">
+                            <a class="sort-link <%=(SortMode == " view") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "view") %>">Quan tâm nhất</a>
+                        </div>
+                        <div class="dok-dropdown__item price-asc">
+                            <a class="sort-link <%=(SortMode == " price_asc") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "price_asc") %>">Giá thấp đến cao</a>
+                        </div>
+                        <div class="dok-dropdown__item price-desc">
+                            <a class="sort-link <%=(SortMode == " price_desc") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "price_desc") %>">Giá cao xuống thấp</a>
+                        </div>
+                        <div class="dok-dropdown__item popularity-desc">
+                            <a class="sort-link <%=(SortMode == " buy") ? "active" : "" %>" href="<%= ViewPage.GetURL("sort", "buy") %>">Bán chạy nhất</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-}
+</div>
+
 <div class="dok-product-filter mobile d-lg-none d-block">
     <div class="mb-filter" data-sticky data-sticky-class="filter-sticky">
         <div class="container">
             <div class="dok-mobile-filters">
                 <div class="d-flex align-items-center">
                     <div class="box-checkbox extend">
-                        <%--<a href="" class="c-checkitem" rel="nofollow">
-                            <span class="tick-checkbox"></span>
-                            <p>Giảm giá</p>
+                        @* <a href="" class="c-checkitem" rel="nofollow">
+                        <span class="tick-checkbox"></span>
+                        <p>Giảm giá</p>
                         </a>
                         <a href="" class="c-checkitem" rel="nofollow">
-                            <span class="tick-checkbox"></span>
-                            <p>Trả Góp 0%</p>
+                        <span class="tick-checkbox"></span>
+                        <p>Trả Góp 0%</p>
                         </a>
                         <a href="" class="c-checkitem active" rel="nofollow">
-                            <span class="tick-checkbox"></span>
-                            <p>Mới 2023</p>
-                        </a>--%>
+                        <span class="tick-checkbox"></span>
+                        <p>Mới 2023</p>
+                        </a> *@
                     </div>
                     <div class="ms-auto">
                         <div class="dok-combination">
@@ -380,73 +380,70 @@
 
             <div class="position-relative">
                 <div class="dok-filters">
-                    <% if (listBrand != null && listBrand.Count > 0)
+                    @if (listBrand.IsNotEmpty())
                     {
-                    %>
-                    <div class="filter-item block-manu lst-brand-mobile">
-                        <div class="filter-item__title jsTitle">
-                            <div class="arrow-filter"></div>
-                            <span>Hãng</span>
-                        </div>
-                        <div class="filter-show">
-                            <div class="filter-list filter-list--hang manu filterBrand" data-rows="3">
-                                <%for (var i = 0; listBrand != null && i < listBrand.Count; i++)
-                                {%>
-                                <a href="javascript:addBrand(this, <%=listBrand[i].ID %>)" data-id="<%=listBrand[i].ID %>" class="c-btnbox filter-manu" title="<%=listBrand[i].Name %>">
-                                    <%if (!string.IsNullOrEmpty(listBrand[i].File))
-                                    { %>
-                                    <img alt="<%=listBrand[i].Name %>" width="68" height="30" class="lazyload" src="<%=Utils.GetWebPFile(listBrand[i].File, 4, 68, 30) %>" />
-                                    <%}
-                                    else
-                                    { %>
-                                    <%=listBrand[i].Name %>
-                                    <%} %>
-                                </a>
-                                <%} %>
+                        <div class="filter-item block-manu lst-brand-mobile">
+                            <div class="filter-item__title jsTitle">
+                                <div class="arrow-filter"></div>
+                                <span>Hãng</span>
                             </div>
+                            <div class="filter-show">
+                                <div class="filter-list filter-list--hang manu filterBrand" data-rows="3">
+                                    @for (var i = 0; listBrand != null && i < listBrand.Count; i++)
+                                    {
+                                        <a href="javascript:addBrand(this, @listBrand[i].ID)" data-id="@listBrand[i].ID" class="c-btnbox filter-manu" title="@listBrand[i].Name">
+                                            @if (!string.IsNullOrEmpty(listBrand[i].File))
+                                            {
+                                                <img alt="@listBrand[i].Name" width="68" height="30" class="lazyload" src="@await ImageHelper.ResizeToWebpAsync(listBrand[i].File, 68, 30)" />
+                                            }
+                                            else
+                                            {
 
-                            <button class="btn-filter-show-more show-more" type="button">Xem thêm</button>
-                            <div class="filter-button filter-button--total" style="display: block;">
-                                <a href="javascript:removeAllBrand();" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
-                                <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
+                                                @listBrand[i].Name
+                                            }
+                                        </a>
+                                    }
+                                </div>
+
+                                <button class="btn-filter-show-more show-more" type="button">Xem thêm</button>
+                                <div class="filter-button filter-button--total" style="display: block;">
+                                    <a href="javascript:removeAllBrand();" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
+                                    <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <%} %>
-                    <% if (listMenu != null && listMenu.Count > 0)
+                    }
+                    @if (listMenu.IsNotEmpty())
                     {
-                    %>
-                    <div class="filter-item block-manu lst-menu-mobile">
-                        <div class="filter-item__title jsTitle">
-                            <div class="arrow-filter"></div>
-                            <span>Phân loại</span>
-                        </div>
-                        <div class="filter-show">
-                            <div class="filter-list filter-list--hang manu menu filterMenu">
-                                <%for (var i = 0; listMenu != null && i < listMenu.Count; i++)
-                                {
-                                %>
-                                <a href="javascript:addMenu(this, <%=listMenu[i].MenuID %>, '<%=listMenu[i].Code %>')" data-id="<%=listMenu[i].MenuID %>" class="c-btnbox <%=ViewPage.IsPageActived(listMenu[i]) ? " active" : "" %>
-                                    filter-manu" title="<%=listMenu[i].Name %>">
-                                    <%if (!string.IsNullOrEmpty(listMenu[i].File))
-                                    { %>
-                                    <img alt="<%=listMenu[i].Name %>" width="68" height="30" class="lazyload" src="<%=Utils.GetWebPFile(listMenu[i].File, 4, 68, 30) %>" />
-                                    <%}
-                                    else
-                                    { %>
-                                    <%=!string.IsNullOrEmpty(listMenu[i].AliasName) ? listMenu[i].AliasName : listMenu[i].Name %>
-                                    <%} %>
-                                </a>
-                                <%} %>
+                        <div class="filter-item block-manu lst-menu-mobile">
+                            <div class="filter-item__title jsTitle">
+                                <div class="arrow-filter"></div>
+                                <span>Phân loại</span>
                             </div>
-                            <div class="filter-button filter-button--total" style="display: block;">
-                                <a href="javascript:removeAllMenu(<%=ViewPage.CurrentPage.MenuID %>, '<%=ViewPage.CurrentPage.Code %>');" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
-                                <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
+                            <div class="filter-show">
+                                <div class="filter-list filter-list--hang manu menu filterMenu">
+                                    @for (var i = 0; listMenu != null && i < listMenu.Count; i++)
+                                    {
+                                        <a href="javascript:addMenu(this, @listMenu[i].MenuID, '@listMenu[i].Code')" data-id="@listMenu[i].MenuID" class="c-btnbox @(listMenu[i].ID == Html.CurrentPage().ID ? " active" : "") filter-manu" title="@listMenu[i].Name">
+                                            @if (!string.IsNullOrEmpty(listMenu[i].File))
+                                            {
+                                                <img alt="@listMenu[i].Name" width="68" height="30" class="lazyload" src="@await ImageHelper.ResizeToWebpAsync(listMenu[i].File, 68, 30)" />
+                                            }
+                                            else
+                                            {
+                                                @(!string.IsNullOrEmpty(listMenu[i].AliasName) ? listMenu[i].AliasName : listMenu[i].Name)
+                                            }
+                                        </a>
+                                    }
+                                </div>
+                                <div class="filter-button filter-button--total" style="display: block;">
+                                    <a href="javascript:removeAllMenu(<%=ViewPage.CurrentPage.MenuID %>, '<%=ViewPage.CurrentPage.Code %>');" class="btn-filter-close" title="Bỏ chọn">Bỏ chọn</a>
+                                    <a href="javascript:;" class="btn-filter-readmore">Xem <b class="total-reloading"></b>kết quả</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <%} %>
-                    <%
+                    }
+
                     if (listItem != null)
                     {
                     int zzz = 0;
